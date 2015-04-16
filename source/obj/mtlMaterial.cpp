@@ -1,4 +1,4 @@
-#include "mtlMaterial.hpp"
+#include "diy/obj/mtlMaterial.hpp"
 
 namespace diy
 {

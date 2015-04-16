@@ -11,24 +11,32 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="mtlColorRGB.hpp" />
-    <ClInclude Include="mtlFile.hpp" />
-    <ClInclude Include="mtlMaterial.hpp" />
-    <ClInclude Include="objFace.hpp" />
-    <ClInclude Include="objFile.hpp" />
-    <ClInclude Include="objIndexedVertex.hpp" />
-    <ClInclude Include="objTexCoord.hpp" />
-    <ClInclude Include="objVector.hpp" />
+    <ClInclude Include="..\include\diy\axes.hpp" />
+    <ClInclude Include="..\include\diy\camera.hpp" />
+    <ClInclude Include="..\include\diy\grid.hpp" />
+    <ClInclude Include="..\include\diy\obj\mtlColorRGB.hpp" />
+    <ClInclude Include="..\include\diy\obj\mtlFile.hpp" />
+    <ClInclude Include="..\include\diy\obj\mtlMaterial.hpp" />
+    <ClInclude Include="..\include\diy\obj\objFace.hpp" />
+    <ClInclude Include="..\include\diy\obj\objFile.hpp" />
+    <ClInclude Include="..\include\diy\obj\objIndexedVertex.hpp" />
+    <ClInclude Include="..\include\diy\obj\objTexCoord.hpp" />
+    <ClInclude Include="..\include\diy\obj\objVector.hpp" />
+    <ClInclude Include="..\include\diy\shader.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="mtlColorRGB.cpp" />
-    <ClCompile Include="mtlFile.cpp" />
-    <ClCompile Include="mtlMaterial.cpp" />
-    <ClCompile Include="objFace.cpp" />
-    <ClCompile Include="objFile.cpp" />
-    <ClCompile Include="objIndexedVertex.cpp" />
-    <ClCompile Include="objTexCoord.cpp" />
-    <ClCompile Include="objVector.cpp" />
+    <ClCompile Include="..\source\axes.cpp" />
+    <ClCompile Include="..\source\camera.cpp" />
+    <ClCompile Include="..\source\grid.cpp" />
+    <ClCompile Include="..\source\obj\mtlColorRGB.cpp" />
+    <ClCompile Include="..\source\obj\mtlFile.cpp" />
+    <ClCompile Include="..\source\obj\mtlMaterial.cpp" />
+    <ClCompile Include="..\source\obj\objFace.cpp" />
+    <ClCompile Include="..\source\obj\objFile.cpp" />
+    <ClCompile Include="..\source\obj\objIndexedVertex.cpp" />
+    <ClCompile Include="..\source\obj\objTexCoord.cpp" />
+    <ClCompile Include="..\source\obj\objVector.cpp" />
+    <ClCompile Include="..\source\shader.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{072104E1-068C-46A1-8F0D-A1D21AD3E93C}</ProjectGuid>
@@ -64,6 +72,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)\..\include;$(ProjectDir)\..\source;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -87,13 +96,15 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;GLM_FORCE_PURE;GLM_FORCE_RADIANS;WIN32;NDEBUG;_WINDOWS;_USRDLL;DIYLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\dev\glm-0.9.6.3\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\glew-1.12.0\include;C:\dev\glm-0.9.6.3\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\dev\glew-1.12.0\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

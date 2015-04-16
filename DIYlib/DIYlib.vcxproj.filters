@@ -19,57 +19,105 @@
     <Filter Include="Source Files\ObjFile">
       <UniqueIdentifier>{40ded48b-1e92-46fa-b827-79bc83121f3b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Shader">
+      <UniqueIdentifier>{5c20a261-b2a2-480e-b63a-5a796b451df0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Camera">
+      <UniqueIdentifier>{4db271cc-8885-4741-ac86-3e041b9dac56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Camera">
+      <UniqueIdentifier>{de8c6ee5-70d3-4ada-9f5d-4e2c05f0f779}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Axes">
+      <UniqueIdentifier>{0ec160e8-b9a9-4699-9eae-22677e539fda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Axes">
+      <UniqueIdentifier>{0c74ed8e-672c-49d4-b332-4748d90b088c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Shader">
+      <UniqueIdentifier>{51add403-d0d8-4b71-bb67-8072ecae2ff6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Grid">
+      <UniqueIdentifier>{9910814b-86f1-400e-a854-91dba64510bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Grid">
+      <UniqueIdentifier>{ef03a184-b165-46c7-8fc4-f16a2dd0fdcf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="mtlColorRGB.hpp">
+    <ClInclude Include="..\include\diy\obj\mtlColorRGB.hpp">
       <Filter>Header Files\ObjFile</Filter>
     </ClInclude>
-    <ClInclude Include="mtlFile.hpp">
+    <ClInclude Include="..\include\diy\obj\mtlFile.hpp">
       <Filter>Header Files\ObjFile</Filter>
     </ClInclude>
-    <ClInclude Include="mtlMaterial.hpp">
+    <ClInclude Include="..\include\diy\obj\mtlMaterial.hpp">
       <Filter>Header Files\ObjFile</Filter>
     </ClInclude>
-    <ClInclude Include="objFace.hpp">
+    <ClInclude Include="..\include\diy\obj\objFace.hpp">
       <Filter>Header Files\ObjFile</Filter>
     </ClInclude>
-    <ClInclude Include="objFile.hpp">
+    <ClInclude Include="..\include\diy\obj\objFile.hpp">
       <Filter>Header Files\ObjFile</Filter>
     </ClInclude>
-    <ClInclude Include="objIndexedVertex.hpp">
+    <ClInclude Include="..\include\diy\obj\objIndexedVertex.hpp">
       <Filter>Header Files\ObjFile</Filter>
     </ClInclude>
-    <ClInclude Include="objTexCoord.hpp">
+    <ClInclude Include="..\include\diy\obj\objTexCoord.hpp">
       <Filter>Header Files\ObjFile</Filter>
     </ClInclude>
-    <ClInclude Include="objVector.hpp">
+    <ClInclude Include="..\include\diy\obj\objVector.hpp">
       <Filter>Header Files\ObjFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\shader.hpp">
+      <Filter>Header Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\camera.hpp">
+      <Filter>Header Files\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\axes.hpp">
+      <Filter>Header Files\Axes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\grid.hpp">
+      <Filter>Header Files\Grid</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="mtlColorRGB.cpp">
+    <ClCompile Include="..\source\obj\mtlColorRGB.cpp">
       <Filter>Source Files\ObjFile</Filter>
     </ClCompile>
-    <ClCompile Include="mtlFile.cpp">
+    <ClCompile Include="..\source\obj\mtlFile.cpp">
       <Filter>Source Files\ObjFile</Filter>
     </ClCompile>
-    <ClCompile Include="mtlMaterial.cpp">
+    <ClCompile Include="..\source\obj\mtlMaterial.cpp">
       <Filter>Source Files\ObjFile</Filter>
     </ClCompile>
-    <ClCompile Include="objFace.cpp">
+    <ClCompile Include="..\source\obj\objFace.cpp">
       <Filter>Source Files\ObjFile</Filter>
     </ClCompile>
-    <ClCompile Include="objFile.cpp">
+    <ClCompile Include="..\source\obj\objFile.cpp">
       <Filter>Source Files\ObjFile</Filter>
     </ClCompile>
-    <ClCompile Include="objIndexedVertex.cpp">
+    <ClCompile Include="..\source\obj\objIndexedVertex.cpp">
       <Filter>Source Files\ObjFile</Filter>
     </ClCompile>
-    <ClCompile Include="objTexCoord.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="objVector.cpp">
+    <ClCompile Include="..\source\obj\objTexCoord.cpp">
       <Filter>Source Files\ObjFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\obj\objVector.cpp">
+      <Filter>Source Files\ObjFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shader.cpp">
+      <Filter>Source Files\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\camera.cpp">
+      <Filter>Source Files\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\axes.cpp">
+      <Filter>Source Files\Axes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\grid.cpp">
+      <Filter>Source Files\Grid</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
