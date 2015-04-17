@@ -33,6 +33,14 @@
     <ClInclude Include="..\source\obj\objIndexedVertex.hpp" />
     <ClInclude Include="..\source\obj\objTexCoord.hpp" />
     <ClInclude Include="..\source\obj\objVector.hpp" />
+    <ClInclude Include="..\source\smd\smdBone.hpp" />
+    <ClInclude Include="..\source\smd\smdFace.hpp" />
+    <ClInclude Include="..\source\smd\smdFile.hpp" />
+    <ClInclude Include="..\source\smd\smdFrame.hpp" />
+    <ClInclude Include="..\source\smd\smdSkinWeight.hpp" />
+    <ClInclude Include="..\source\smd\smdTexCoord.hpp" />
+    <ClInclude Include="..\source\smd\smdVector.hpp" />
+    <ClInclude Include="..\source\smd\smdVertex.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\source\axes.cpp" />
@@ -56,6 +64,14 @@
     <ClCompile Include="..\source\obj\objTexCoord.cpp" />
     <ClCompile Include="..\source\obj\objVector.cpp" />
     <ClCompile Include="..\source\shader.cpp" />
+    <ClCompile Include="..\source\smd\smdbone.cpp" />
+    <ClCompile Include="..\source\smd\smdface.cpp" />
+    <ClCompile Include="..\source\smd\smdfile.cpp" />
+    <ClCompile Include="..\source\smd\smdframe.cpp" />
+    <ClCompile Include="..\source\smd\smdskinweight.cpp" />
+    <ClCompile Include="..\source\smd\smdtexcoord.cpp" />
+    <ClCompile Include="..\source\smd\smdvector.cpp" />
+    <ClCompile Include="..\source\smd\smdvertex.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{072104E1-068C-46A1-8F0D-A1D21AD3E93C}</ProjectGuid>

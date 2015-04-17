@@ -49,6 +49,12 @@
     <Filter Include="Source Files\MqoFile">
       <UniqueIdentifier>{e330d2b5-2386-4b34-b210-cee07b4ae66c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\SmdFile">
+      <UniqueIdentifier>{7bd76f18-3b78-409c-bf63-fb06f24e618d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SmdFile">
+      <UniqueIdentifier>{bfbeaae0-dafb-47a6-97bd-b04cfb82303a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\diy\shader.hpp">
@@ -117,6 +123,30 @@
     <ClInclude Include="..\source\mqo\mqoTexCoord.hpp">
       <Filter>Header Files\MqoFile</Filter>
     </ClInclude>
+    <ClInclude Include="..\source\smd\smdBone.hpp">
+      <Filter>Header Files\SmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\smd\smdFace.hpp">
+      <Filter>Header Files\SmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\smd\smdFile.hpp">
+      <Filter>Header Files\SmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\smd\smdFrame.hpp">
+      <Filter>Header Files\SmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\smd\smdSkinWeight.hpp">
+      <Filter>Header Files\SmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\smd\smdTexCoord.hpp">
+      <Filter>Header Files\SmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\smd\smdVector.hpp">
+      <Filter>Header Files\SmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\smd\smdVertex.hpp">
+      <Filter>Header Files\SmdFile</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\source\obj\mtlColorRGB.cpp">
@@ -181,6 +211,30 @@
     </ClCompile>
     <ClCompile Include="..\source\mqo\mqoVector.cpp">
       <Filter>Source Files\MqoFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\smd\smdbone.cpp">
+      <Filter>Source Files\SmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\smd\smdface.cpp">
+      <Filter>Source Files\SmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\smd\smdfile.cpp">
+      <Filter>Source Files\SmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\smd\smdframe.cpp">
+      <Filter>Source Files\SmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\smd\smdskinweight.cpp">
+      <Filter>Source Files\SmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\smd\smdtexcoord.cpp">
+      <Filter>Source Files\SmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\smd\smdvector.cpp">
+      <Filter>Source Files\SmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\smd\smdvertex.cpp">
+      <Filter>Source Files\SmdFile</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
