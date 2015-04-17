@@ -1,5 +1,5 @@
-#include "diy/obj/mtlMaterial.hpp"
-#include "diy/obj/mtlFile.hpp"
+#include "mtlMaterial.hpp"
+#include "mtlFile.hpp"
 
 #include <fstream>
 #include <sstream>

@@ -43,32 +43,14 @@
     <Filter Include="Source Files\Grid">
       <UniqueIdentifier>{ef03a184-b165-46c7-8fc4-f16a2dd0fdcf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\MqoFile">
+      <UniqueIdentifier>{ee22a742-3ffe-4bae-b964-d8986de6595f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MqoFile">
+      <UniqueIdentifier>{e330d2b5-2386-4b34-b210-cee07b4ae66c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\diy\obj\mtlColorRGB.hpp">
-      <Filter>Header Files\ObjFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\diy\obj\mtlFile.hpp">
-      <Filter>Header Files\ObjFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\diy\obj\mtlMaterial.hpp">
-      <Filter>Header Files\ObjFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\diy\obj\objFace.hpp">
-      <Filter>Header Files\ObjFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\diy\obj\objFile.hpp">
-      <Filter>Header Files\ObjFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\diy\obj\objIndexedVertex.hpp">
-      <Filter>Header Files\ObjFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\diy\obj\objTexCoord.hpp">
-      <Filter>Header Files\ObjFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\diy\obj\objVector.hpp">
-      <Filter>Header Files\ObjFile</Filter>
-    </ClInclude>
     <ClInclude Include="..\include\diy\shader.hpp">
       <Filter>Header Files\Shader</Filter>
     </ClInclude>
@@ -80,6 +62,60 @@
     </ClInclude>
     <ClInclude Include="..\include\diy\grid.hpp">
       <Filter>Header Files\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\DIY.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\obj\mtlColorRGB.hpp">
+      <Filter>Header Files\ObjFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\obj\mtlFile.hpp">
+      <Filter>Header Files\ObjFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\obj\mtlMaterial.hpp">
+      <Filter>Header Files\ObjFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\obj\objFace.hpp">
+      <Filter>Header Files\ObjFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\obj\objFile.hpp">
+      <Filter>Header Files\ObjFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\obj\objIndexedVertex.hpp">
+      <Filter>Header Files\ObjFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\obj\objTexCoord.hpp">
+      <Filter>Header Files\ObjFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\obj\objVector.hpp">
+      <Filter>Header Files\ObjFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\mqo\mqoFace.hpp">
+      <Filter>Header Files\MqoFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\mqo\mqoFile.hpp">
+      <Filter>Header Files\MqoFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\mqo\mqoLight.hpp">
+      <Filter>Header Files\MqoFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\mqo\mqoMaterial.hpp">
+      <Filter>Header Files\MqoFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\mqo\mqoObject.hpp">
+      <Filter>Header Files\MqoFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\mqo\mqoScene.hpp">
+      <Filter>Header Files\MqoFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\mqo\mqoString.hpp">
+      <Filter>Header Files\MqoFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\mqo\mqoVector.hpp">
+      <Filter>Header Files\MqoFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\mqo\mqoTexCoord.hpp">
+      <Filter>Header Files\MqoFile</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -118,6 +154,33 @@
     </ClCompile>
     <ClCompile Include="..\source\grid.cpp">
       <Filter>Source Files\Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\mqo\mqoFace.cpp">
+      <Filter>Source Files\MqoFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\mqo\mqoFile.cpp">
+      <Filter>Source Files\MqoFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\mqo\mqoLight.cpp">
+      <Filter>Source Files\MqoFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\mqo\mqoMaterial.cpp">
+      <Filter>Source Files\MqoFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\mqo\mqoObject.cpp">
+      <Filter>Source Files\MqoFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\mqo\mqoScene.cpp">
+      <Filter>Source Files\MqoFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\mqo\mqoString.cpp">
+      <Filter>Source Files\MqoFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\mqo\mqoTexCoord.cpp">
+      <Filter>Source Files\MqoFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\mqo\mqoVector.cpp">
+      <Filter>Source Files\MqoFile</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,4 +1,4 @@
-#include "diy/obj/objIndexedVertex.hpp"
+#include "objIndexedVertex.hpp"
 
 namespace diy
 {

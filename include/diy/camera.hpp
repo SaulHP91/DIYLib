@@ -175,13 +175,13 @@ namespace diy
 
 		DIYLIB_API void GetRay(glm::vec2 mousePos, glm::vec3& origin, glm::vec3& direction);
 
-		class Status
+		class State
 		{
 		public:
-			Status(void);
-			~Status(void);
+			DIYLIB_API State(void);
+			DIYLIB_API ~State(void);
 
-			void Clear(void);
+			DIYLIB_API void Clear(void);
 
 			enum KeyboardKey
 			{
@@ -190,10 +190,10 @@ namespace diy
 				Alt
 			};
 
-			Status& operator <<(KeyboardKey key);
-			Status& operator >>(KeyboardKey key);
-			void SetPressed(KeyboardKey key, bool pressed);
-			bool GetPressed(KeyboardKey key);
+			DIYLIB_API State& operator <<(KeyboardKey key);
+			DIYLIB_API State& operator >>(KeyboardKey key);
+			DIYLIB_API void SetPressed(KeyboardKey key, bool pressed);
+			DIYLIB_API bool GetPressed(KeyboardKey key);
 
 			enum MouseButton
 			{
@@ -202,10 +202,10 @@ namespace diy
 				Middle
 			};
 
-			Status& operator <<(MouseButton button);
-			Status& operator >>(MouseButton button);
-			void SetPressed(MouseButton button, bool pressed);
-			bool GetPressed(MouseButton button);
+			DIYLIB_API State& operator <<(MouseButton button);
+			DIYLIB_API State& operator >>(MouseButton button);
+			DIYLIB_API void SetPressed(MouseButton button, bool pressed);
+			DIYLIB_API bool GetPressed(MouseButton button);
 
 		private:
 			bool mKeyboardKeys[3];
@@ -226,8 +226,8 @@ namespace diy
 		DIYLIB_API void SetStyle(Style style);
 		DIYLIB_API Style GetStyle(void);
 
-		DIYLIB_API void MouseMove(Status status, glm::vec2 mousePos);
-		DIYLIB_API void MouseWheel(Status status, int wheelDelta, glm::vec2 mousePos);
+		DIYLIB_API void MouseMove(State state, glm::vec2 mousePos);
+		DIYLIB_API void MouseWheel(State state, int wheelDelta, glm::vec2 mousePos);
 
 		DIYLIB_API void FitBoundingSphere(glm::vec3 center, float radius);
 		DIYLIB_API void FitBoundingBox(glm::vec3 center, glm::vec3 halfExtends, glm::mat4 matrix = glm::mat4(1.0f));
@@ -261,13 +261,13 @@ namespace diy
 		glm::vec2 mMousePos, mOldMousePos;
 		Style mStyle;
 
-		void MouseMoveIllusion(Status status, glm::vec2 mouseDelta);
-		void MouseMoveCustomGirl(Status status, glm::vec2 mouseDelta);
-		void MouseMoveMaya(Status status, glm::vec2 mouseDelta);
-		void MouseMoveStudioMax(Status status, glm::vec2 mouseDelta);
-		void MouseMoveMetasequoia(Status status, glm::vec2 mouseDelta);
-		void MouseMoveBlender(Status status, glm::vec2 mouseDelta);
-		void MouseMoveMilkShape(Status status, glm::vec2 mouseDelta);
+		void MouseMoveIllusion(State state, glm::vec2 mouseDelta);
+		void MouseMoveCustomGirl(State state, glm::vec2 mouseDelta);
+		void MouseMoveMaya(State state, glm::vec2 mouseDelta);
+		void MouseMoveStudioMax(State state, glm::vec2 mouseDelta);
+		void MouseMoveMetasequoia(State state, glm::vec2 mouseDelta);
+		void MouseMoveBlender(State state, glm::vec2 mouseDelta);
+		void MouseMoveMilkShape(State state, glm::vec2 mouseDelta);
 
 		static Shader mPivotShader;
 		static unsigned int mPivotPositionBuffer;

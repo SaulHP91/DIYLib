@@ -1,4 +1,4 @@
-#include "diy/obj/objFace.hpp"
+#include "objFace.hpp"
 
 namespace diy
 {

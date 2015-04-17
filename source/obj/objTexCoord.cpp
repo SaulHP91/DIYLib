@@ -1,4 +1,4 @@
-#include "diy/obj/objTexCoord.hpp"
+#include "objTexCoord.hpp"
 
 namespace diy
 {

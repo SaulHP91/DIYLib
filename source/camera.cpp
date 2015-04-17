@@ -1089,7 +1089,7 @@ namespace diy
 		break;
 		case Perspective: default:
 		{
-			mProjectionMatrix = glm::perspective(mFovy, mAspect, mPerspectiveNear, mFar);
+			mProjectionMatrix = glm::perspective(glm::radians(mFovy), mAspect, mPerspectiveNear, mFar);
 		}
 		}
 
@@ -1193,17 +1193,17 @@ namespace diy
 		}
 	}
 
-	Camera::Status::Status(void)
+	Camera::State::State(void)
 	{
 		Clear();
 	}
 
-	Camera::Status::~Status(void)
+	Camera::State::~State(void)
 	{
 		;
 	}
 
-	void Camera::Status::Clear(void)
+	void Camera::State::Clear(void)
 	{
 		for (int i = 0; i < 3; ++i)
 		{
@@ -1212,55 +1212,55 @@ namespace diy
 		}
 	}
 
-	Camera::Status& Camera::Status::operator <<(KeyboardKey key)
+	Camera::State& Camera::State::operator <<(KeyboardKey key)
 	{
 		mKeyboardKeys[key] = true;
 
 		return *this;
 	}
 
-	Camera::Status& Camera::Status::operator >>(KeyboardKey key)
+	Camera::State& Camera::State::operator >>(KeyboardKey key)
 	{
 		mKeyboardKeys[key] = false;
 
 		return *this;
 	}
 
-	void Camera::Status::SetPressed(KeyboardKey key, bool pressed)
+	void Camera::State::SetPressed(KeyboardKey key, bool pressed)
 	{
 		mKeyboardKeys[key] = pressed;
 	}
 
-	bool Camera::Status::GetPressed(KeyboardKey key)
+	bool Camera::State::GetPressed(KeyboardKey key)
 	{
 		return mKeyboardKeys[key];
 	}
 
-	Camera::Status& Camera::Status::operator <<(MouseButton button)
+	Camera::State& Camera::State::operator <<(MouseButton button)
 	{
 		mMouseButtons[button] = true;
 
 		return *this;
 	}
 
-	Camera::Status& Camera::Status::operator >>(MouseButton button)
+	Camera::State& Camera::State::operator >>(MouseButton button)
 	{
 		mMouseButtons[button] = false;
 
 		return *this;
 	}
 
-	void Camera::Status::SetPressed(MouseButton button, bool pressed)
+	void Camera::State::SetPressed(MouseButton button, bool pressed)
 	{
 		mMouseButtons[button] = pressed;
 	}
 
-	bool Camera::Status::GetPressed(MouseButton button)
+	bool Camera::State::GetPressed(MouseButton button)
 	{
 		return mMouseButtons[button];
 	}
 
-	void Camera::MouseMove(Status status, glm::vec2 mousePos)
+	void Camera::MouseMove(State state, glm::vec2 mousePos)
 	{
 		mOldMousePos = mMousePos;
 		mMousePos = mousePos;
@@ -1276,13 +1276,13 @@ namespace diy
 		{
 			switch (mStyle)
 			{
-			case Illusion: MouseMoveIllusion(status, -mouseDelta); break;
-			case CustomGirl: MouseMoveCustomGirl(status, -mouseDelta); break;
-			case Maya: MouseMoveMaya(status, -mouseDelta); break;
-			case StudioMax: MouseMoveStudioMax(status, -mouseDelta); break;
-			case Metasequoia: MouseMoveMetasequoia(status, -mouseDelta); break;
-			case Blender: MouseMoveBlender(status, -mouseDelta); break;
-			case MilkShape: MouseMoveMilkShape(status, -mouseDelta); break;
+			case Illusion: MouseMoveIllusion(state, -mouseDelta); break;
+			case CustomGirl: MouseMoveCustomGirl(state, -mouseDelta); break;
+			case Maya: MouseMoveMaya(state, -mouseDelta); break;
+			case StudioMax: MouseMoveStudioMax(state, -mouseDelta); break;
+			case Metasequoia: MouseMoveMetasequoia(state, -mouseDelta); break;
+			case Blender: MouseMoveBlender(state, -mouseDelta); break;
+			case MilkShape: MouseMoveMilkShape(state, -mouseDelta); break;
 			default:;
 			}
 		}
@@ -1298,12 +1298,12 @@ namespace diy
 		return mStyle;
 	}
 
-	void Camera::MouseMoveIllusion(Status status, glm::vec2 mouseDelta)
+	void Camera::MouseMoveIllusion(State state, glm::vec2 mouseDelta)
 	{
 		float d = 2.0f * (1.0f / mZoom) * (mDistance / mFocalDistance);
 		float f = 180.0f / mViewport[3];
 
-		if (status.GetPressed(Status::Left) && status.GetPressed(Status::Right))
+		if (state.GetPressed(State::Left) && state.GetPressed(State::Right))
 		{
 			if (!mPivotLocked)
 			{
@@ -1311,7 +1311,7 @@ namespace diy
 				mPivot += mInverseNormalParentMatrix * (d * mouseDelta.y) * mNormalBillboardMatrix * glm::vec3(0.0f, 0.0f, 1.0f);
 			}
 		}
-		else if (status.GetPressed(Status::Right))
+		else if (state.GetPressed(State::Right))
 		{
 			if (!mPivotLocked)
 			{
@@ -1323,14 +1323,14 @@ namespace diy
 				mDistance += (d * -mouseDelta.x) * mZoom;
 			}
 		}
-		else if (status.GetPressed(Status::Left))
+		else if (state.GetPressed(State::Left))
 		{
 			if (!mOrientationLocked)
 			{
 				mOrientation += glm::vec3(f * -mouseDelta.y, f * mouseDelta.x, 0.0f);
 			}
 		}
-		else if (status.GetPressed(Status::Middle))
+		else if (state.GetPressed(State::Middle))
 		{
 			if (!mPivotLocked)
 			{
@@ -1342,12 +1342,12 @@ namespace diy
 		Update();
 	}
 
-	void Camera::MouseMoveCustomGirl(Status status, glm::vec2 mouseDelta)
+	void Camera::MouseMoveCustomGirl(State state, glm::vec2 mouseDelta)
 	{
 		float d = 2.0f * (1.0f / mZoom) * (mDistance / mFocalDistance);
 		float f = 180.0f / mViewport[3];
 
-		if (status.GetPressed(Status::Left) && status.GetPressed(Status::Right))
+		if (state.GetPressed(State::Left) && state.GetPressed(State::Right))
 		{
 			if (!mPivotLocked)
 			{
@@ -1355,21 +1355,21 @@ namespace diy
 				mPivot += mInverseNormalParentMatrix * (d * -mouseDelta.y) * mNormalBillboardMatrix * glm::vec3(0.0f, 0.0f, 1.0f);
 			}
 		}
-		else if (status.GetPressed(Status::Right))
+		else if (state.GetPressed(State::Right))
 		{
 			if (!mDistanceLocked)
 			{
 				mDistance += (d * -mouseDelta.y) * mZoom;
 			}
 		}
-		else if (status.GetPressed(Status::Left))
+		else if (state.GetPressed(State::Left))
 		{
 			if (!mOrientationLocked)
 			{
 				mOrientation += glm::vec3(f * -mouseDelta.y, f * mouseDelta.x, 0.0f);
 			}
 		}
-		else if (status.GetPressed(Status::Middle))
+		else if (state.GetPressed(State::Middle))
 		{
 			if (!mPivotLocked)
 			{
@@ -1381,12 +1381,12 @@ namespace diy
 		Update();
 	}
 
-	void Camera::MouseMoveMaya(Status status, glm::vec2 mouseDelta)
+	void Camera::MouseMoveMaya(State state, glm::vec2 mouseDelta)
 	{
 		float d = 2.0f * (1.0f / mZoom) * (mDistance / mFocalDistance);
 		float f = 180.0f / mViewport[3];
 
-		if (status.GetPressed(Status::Alt) && status.GetPressed(Status::Right))
+		if (state.GetPressed(State::Alt) && state.GetPressed(State::Right))
 		{
 			if (!mDistanceLocked)
 			{
@@ -1394,14 +1394,14 @@ namespace diy
 				mDistance += (d * -mouseDelta.y) * mZoom;
 			}
 		}
-		else if (status.GetPressed(Status::Alt) && status.GetPressed(Status::Left))
+		else if (state.GetPressed(State::Alt) && state.GetPressed(State::Left))
 		{
 			if (!mOrientationLocked)
 			{
 				mOrientation += glm::vec3(f * -mouseDelta.y, f * mouseDelta.x, 0.0f);
 			}
 		}
-		else if (status.GetPressed(Status::Alt) && status.GetPressed(Status::Middle))
+		else if (state.GetPressed(State::Alt) && state.GetPressed(State::Middle))
 		{
 			if (!mPivotLocked)
 			{
@@ -1413,19 +1413,19 @@ namespace diy
 		Update();
 	}
 
-	void Camera::MouseMoveStudioMax(Status status, glm::vec2 mouseDelta)
+	void Camera::MouseMoveStudioMax(State state, glm::vec2 mouseDelta)
 	{
 		float d = 2.0f * (1.0f / mZoom) * (mDistance / mFocalDistance);
 		float f = 180.0f / mViewport[3];
 
-		if (status.GetPressed(Status::Alt) && status.GetPressed(Status::Middle))
+		if (state.GetPressed(State::Alt) && state.GetPressed(State::Middle))
 		{
 			if (!mOrientationLocked)
 			{
 				mOrientation += glm::vec3(f * -mouseDelta.y, f * mouseDelta.x, 0.0f);
 			}
 		}
-		else if (status.GetPressed(Status::Middle))
+		else if (state.GetPressed(State::Middle))
 		{
 			if (!mPivotLocked)
 			{
@@ -1437,26 +1437,26 @@ namespace diy
 		Update();
 	}
 
-	void Camera::MouseMoveMetasequoia(Status status, glm::vec2 mouseDelta)
+	void Camera::MouseMoveMetasequoia(State state, glm::vec2 mouseDelta)
 	{
 		float d = 2.0f * (1.0f / mZoom) * (mDistance / mFocalDistance);
 		float f = 180.0f / mViewport[3];
 
-		if (status.GetPressed(Status::Left) && status.GetPressed(Status::Right))
+		if (state.GetPressed(State::Left) && state.GetPressed(State::Right))
 		{
 			if (!mDistanceLocked)
 			{
 				mDistance += (d * mouseDelta.y) * mZoom;
 			}
 		}
-		else if (status.GetPressed(Status::Right))
+		else if (state.GetPressed(State::Right))
 		{
 			if (!mOrientationLocked)
 			{
 				mOrientation += glm::vec3(f * -mouseDelta.y, f * mouseDelta.x, 0.0f);
 			}
 		}
-		else if (status.GetPressed(Status::Middle))
+		else if (state.GetPressed(State::Middle))
 		{
 			if (!mPivotLocked)
 			{
@@ -1468,19 +1468,19 @@ namespace diy
 		Update();
 	}
 
-	void Camera::MouseMoveBlender(Status status, glm::vec2 mouseDelta)
+	void Camera::MouseMoveBlender(State state, glm::vec2 mouseDelta)
 	{
 		float d = 2.0f * (1.0f / mZoom) * (mDistance / mFocalDistance);
 		float f = 180.0f / mViewport[3];
 
-		if (status.GetPressed(Status::Control) && status.GetPressed(Status::Middle))
+		if (state.GetPressed(State::Control) && state.GetPressed(State::Middle))
 		{
 			if (!mDistanceLocked)
 			{
 				mDistance += (d * mouseDelta.y) * mZoom;
 			}
 		}
-		else if (status.GetPressed(Status::Shift) && status.GetPressed(Status::Middle))
+		else if (state.GetPressed(State::Shift) && state.GetPressed(State::Middle))
 		{
 			if (!mPivotLocked)
 			{
@@ -1488,7 +1488,7 @@ namespace diy
 				mPivot += mInverseNormalParentMatrix * (d * mouseDelta.y) * mNormalBillboardMatrix * glm::vec3(0.0f, 1.0f, 0.0f);
 			}
 		}
-		else if (status.GetPressed(Status::Middle))
+		else if (state.GetPressed(State::Middle))
 		{
 			if (!mOrientationLocked)
 			{
@@ -1499,19 +1499,19 @@ namespace diy
 		Update();
 	}
 
-	void Camera::MouseMoveMilkShape(Status status, glm::vec2 mouseDelta)
+	void Camera::MouseMoveMilkShape(State state, glm::vec2 mouseDelta)
 	{
 		float d = 2.0f * (1.0f / mZoom) * (mDistance / mFocalDistance);
 		float f = 180.0f / mViewport[3];
 
-		if (status.GetPressed(Status::Left))
+		if (state.GetPressed(State::Left))
 		{
 			if (!mOrientationLocked)
 			{
 				mOrientation += glm::vec3(f * -mouseDelta.y, f * mouseDelta.x, 0.0f);
 			}
 		}
-		else if (status.GetPressed(Status::Middle))
+		else if (state.GetPressed(State::Middle))
 		{
 			if (!mPivotLocked)
 			{
@@ -1523,7 +1523,7 @@ namespace diy
 		Update();
 	}
 
-	void Camera::MouseWheel(Status status, int wheelDelta, glm::vec2 mousePos)
+	void Camera::MouseWheel(State state, int wheelDelta, glm::vec2 mousePos)
 	{
 		if (!mEnabled || !wheelDelta)
 		{

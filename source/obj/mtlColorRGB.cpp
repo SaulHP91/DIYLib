@@ -1,4 +1,4 @@
-#include "diy/obj/mtlColorRGB.hpp"
+#include "obj/mtlColorRGB.hpp"
 
 namespace diy
 {

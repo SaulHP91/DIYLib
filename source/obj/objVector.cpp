@@ -1,4 +1,4 @@
-#include "diy/obj/objVector.hpp"
+#include "objVector.hpp"
 
 namespace diy
 {

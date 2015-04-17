@@ -1,4 +1,4 @@
-#include "diy/obj/objFile.hpp"
+#include "objFile.hpp"
 
 #include <fstream>
 #include <sstream>
