@@ -41,7 +41,7 @@ namespace diy
 			Name = buffer;
 
 			in.getline(buffer, 255);
-			if (!stricmp(buffer, "version 1"))
+			if (!_stricmp(buffer, "version 1"))
 			{
 				if (ParseBonesFromFStream(in))
 				{
@@ -72,7 +72,7 @@ namespace diy
 		{
 			return false;
 		}
-		if (!stricmp(buffer, "nodes"))
+		if (!_stricmp(buffer, "nodes"))
 		{
 			while (true)
 			{
@@ -85,7 +85,7 @@ namespace diy
 				{
 					return false;
 				}
-				if (!stricmp(buffer, "end"))
+				if (!_stricmp(buffer, "end"))
 				{
 					break;
 				}
@@ -116,7 +116,7 @@ namespace diy
 		{
 			return false;
 		}
-		if (!stricmp(buffer, "skeleton"))
+		if (!_stricmp(buffer, "skeleton"))
 		{
 			while (true)
 			{
@@ -126,11 +126,11 @@ namespace diy
 				}
 				std::streampos p = in.tellg();
 				in >> buffer;
-				if (!stricmp(buffer, "end"))
+				if (!_stricmp(buffer, "end"))
 				{
 					break;
 				}
-				else if (!stricmp(buffer, "time"))
+				else if (!_stricmp(buffer, "time"))
 				{
 					in >> frame.Time;
 					if (!in.good())
@@ -175,7 +175,7 @@ namespace diy
 		{
 			return false;
 		}
-		if (!stricmp(buffer, "triangles"))
+		if (!_stricmp(buffer, "triangles"))
 		{
 			while (true)
 			{
@@ -189,7 +189,7 @@ namespace diy
 				{
 					return false;
 				}
-				if (!stricmp(buffer, "end"))
+				if (!_stricmp(buffer, "end"))
 				{
 					break;
 				}

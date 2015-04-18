@@ -60,7 +60,7 @@ namespace diy
 			str_in.unget();
 
 			str_in.getline(buffer, 255, '(');
-			if (!stricmp(buffer, "shader"))
+			if (!_stricmp(buffer, "shader"))
 			{
 				str_in >> Shader;
 				if (!str_in.good())
@@ -77,7 +77,7 @@ namespace diy
 					return false;
 				}
 			}
-			else if (!stricmp(buffer, "col"))
+			else if (!_stricmp(buffer, "col"))
 			{
 				if (!Color.ParseFromSStream(str_in))
 				{
@@ -100,7 +100,7 @@ namespace diy
 					return false;
 				}
 			}
-			else if (!stricmp(buffer, "dif"))
+			else if (!_stricmp(buffer, "dif"))
 			{
 				str_in >> Diffuse;
 				if (!str_in.good())
@@ -117,7 +117,7 @@ namespace diy
 					return false;
 				}
 			}
-			else if (!stricmp(buffer, "emi"))
+			else if (!_stricmp(buffer, "emi"))
 			{
 				str_in >> Emission;
 				if (!str_in.good())
@@ -134,7 +134,7 @@ namespace diy
 					return false;
 				}
 			}
-			else if (!stricmp(buffer, "spc"))
+			else if (!_stricmp(buffer, "spc"))
 			{
 				str_in >> Specular;
 				if (!str_in.good())
@@ -151,7 +151,7 @@ namespace diy
 					return false;
 				}
 			}
-			else if (!stricmp(buffer, "power"))
+			else if (!_stricmp(buffer, "power"))
 			{
 				str_in >> Power;
 				if (!str_in.good())
@@ -168,7 +168,7 @@ namespace diy
 					return false;
 				}
 			}
-			else if (!stricmp(buffer, "amb"))
+			else if (!_stricmp(buffer, "amb"))
 			{
 				str_in >> Ambient;
 				if (!str_in.good())
@@ -185,7 +185,7 @@ namespace diy
 					return false;
 				}
 			}
-			else if (!stricmp(buffer, "tex"))
+			else if (!_stricmp(buffer, "tex"))
 			{
 				if (!Texture.ParseFromSStream(str_in))
 				{
@@ -201,7 +201,7 @@ namespace diy
 					return false;
 				}
 			}
-			else if (!stricmp(buffer, "aplane"))
+			else if (!_stricmp(buffer, "aplane"))
 			{
 				if (!AlphaPlane.ParseFromSStream(str_in))
 				{
@@ -217,7 +217,7 @@ namespace diy
 					return false;
 				}
 			}
-			else if (!stricmp(buffer, "bump"))
+			else if (!_stricmp(buffer, "bump"))
 			{
 				if (!Bump.ParseFromSStream(str_in))
 				{

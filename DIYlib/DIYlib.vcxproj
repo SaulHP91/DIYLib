@@ -15,6 +15,12 @@
     <ClInclude Include="..\include\diy\camera.hpp" />
     <ClInclude Include="..\include\diy\DIY.hpp" />
     <ClInclude Include="..\include\diy\grid.hpp" />
+    <ClInclude Include="..\include\diy\intersection.hpp" />
+    <ClInclude Include="..\include\diy\selectable.hpp" />
+    <ClInclude Include="..\include\diy\selectableMesh.hpp" />
+    <ClInclude Include="..\include\diy\selectablePointCloud.hpp" />
+    <ClInclude Include="..\include\diy\selectableSphere.hpp" />
+    <ClInclude Include="..\include\diy\selector.hpp" />
     <ClInclude Include="..\include\diy\shader.hpp" />
     <ClInclude Include="..\source\mqo\mqoFace.hpp" />
     <ClInclude Include="..\source\mqo\mqoFile.hpp" />
@@ -46,6 +52,7 @@
     <ClCompile Include="..\source\axes.cpp" />
     <ClCompile Include="..\source\camera.cpp" />
     <ClCompile Include="..\source\grid.cpp" />
+    <ClCompile Include="..\source\intersection.cpp" />
     <ClCompile Include="..\source\mqo\mqoFace.cpp" />
     <ClCompile Include="..\source\mqo\mqoFile.cpp" />
     <ClCompile Include="..\source\mqo\mqoLight.cpp" />
@@ -63,15 +70,20 @@
     <ClCompile Include="..\source\obj\objIndexedVertex.cpp" />
     <ClCompile Include="..\source\obj\objTexCoord.cpp" />
     <ClCompile Include="..\source\obj\objVector.cpp" />
+    <ClCompile Include="..\source\selectable.cpp" />
+    <ClCompile Include="..\source\selectableMesh.cpp" />
+    <ClCompile Include="..\source\selectablePointCloud.cpp" />
+    <ClCompile Include="..\source\selectableSphere.cpp" />
+    <ClCompile Include="..\source\selector.cpp" />
     <ClCompile Include="..\source\shader.cpp" />
-    <ClCompile Include="..\source\smd\smdbone.cpp" />
-    <ClCompile Include="..\source\smd\smdface.cpp" />
-    <ClCompile Include="..\source\smd\smdfile.cpp" />
-    <ClCompile Include="..\source\smd\smdframe.cpp" />
-    <ClCompile Include="..\source\smd\smdskinweight.cpp" />
-    <ClCompile Include="..\source\smd\smdtexcoord.cpp" />
-    <ClCompile Include="..\source\smd\smdvector.cpp" />
-    <ClCompile Include="..\source\smd\smdvertex.cpp" />
+    <ClCompile Include="..\source\smd\smdBone.cpp" />
+    <ClCompile Include="..\source\smd\smdFace.cpp" />
+    <ClCompile Include="..\source\smd\smdFile.cpp" />
+    <ClCompile Include="..\source\smd\smdFrame.cpp" />
+    <ClCompile Include="..\source\smd\smdSkinWeight.cpp" />
+    <ClCompile Include="..\source\smd\smdTexCoord.cpp" />
+    <ClCompile Include="..\source\smd\smdVector.cpp" />
+    <ClCompile Include="..\source\smd\smdVertex.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{072104E1-068C-46A1-8F0D-A1D21AD3E93C}</ProjectGuid>

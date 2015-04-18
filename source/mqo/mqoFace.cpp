@@ -57,7 +57,7 @@ namespace diy
 			str_in.unget();
 
 			str_in.getline(buffer, 255, '(');
-			if (!stricmp(buffer, "V"))
+			if (!_stricmp(buffer, "V"))
 			{
 				for (int i = 0; i < VertexCount; ++i)
 				{
@@ -78,7 +78,7 @@ namespace diy
 					return false;
 				}
 			}
-			else if (!stricmp(buffer, "M"))
+			else if (!_stricmp(buffer, "M"))
 			{
 				str_in >> MaterialIndex;
 				if (!str_in.good())
@@ -96,7 +96,7 @@ namespace diy
 					return false;
 				}
 			}
-			else if (!stricmp(buffer, "UV"))
+			else if (!_stricmp(buffer, "UV"))
 			{
 				for (int i = 0; i < VertexCount; ++i)
 				{

@@ -5,8 +5,6 @@
 #include <fstream>
 #include <vector>
 
-using namespace std;
-
 namespace diy
 {
 
@@ -128,9 +126,9 @@ namespace diy
 
 	void Shader::CompileFile(const char* file, int type, const char* header)
 	{
-		ifstream in(file, ios::in | ios::binary);
-		streampos start = in.tellg();
-		in.seekg(0, ifstream::end);
+		std::ifstream in(file, std::ios::in | std::ios::binary);
+		std::streampos start = in.tellg();
+		in.seekg(0, std::ifstream::end);
 		int size = in.tellg();
 		char* source = 0;
 		int headerLength = 0;
@@ -615,7 +613,7 @@ namespace diy
 		glUseProgram(0);
 	}
 
-	string Shader::GetShaderInfoLog(int type)
+	const char* Shader::GetShaderInfoLog(int type)
 	{
 		int shader;
 		switch (type)
@@ -651,27 +649,33 @@ namespace diy
 		}
 		}
 
+		static char buffer[256];
+
 		int infoLogLength;
 		glGetShaderiv(shader, GL_INFO_LOG_LENGTH, &infoLogLength);
 		if (infoLogLength > 0)
 		{
-			vector<char> shaderInfoLog(infoLogLength + 1);
-			glGetShaderInfoLog(shader, infoLogLength, 0, &shaderInfoLog[0]);
-			return &shaderInfoLog[0];
+			int length;
+			glGetShaderInfoLog(shader, 255, &length, buffer);
+			buffer[length] = 0;
+			return buffer;
 		}
 
 		return "";
 	}
 
-	string Shader::GetProgramInfoLog(void)
+	const char* Shader::GetProgramInfoLog(void)
 	{
+		static char buffer[256];
+
 		int infoLogLength;
 		glGetProgramiv(mProgram, GL_INFO_LOG_LENGTH, &infoLogLength);
 		if (infoLogLength > 0)
 		{
-			vector<char> programInfoLog(infoLogLength + 1);
-			glGetProgramInfoLog(mProgram, infoLogLength, 0, &programInfoLog[0]);
-			return &programInfoLog[0];
+			int length;
+			glGetProgramInfoLog(mProgram, 255, &length, buffer);
+			buffer[length] = 0;
+			return buffer;
 		}
 
 		return "";

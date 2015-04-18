@@ -62,7 +62,7 @@ namespace diy
 				in.seekg(pos);
 				return false;
 			}
-			if (!stricmp(buffer, "pos"))
+			if (!_stricmp(buffer, "pos"))
 			{
 				if (!Position.ParseFromFStream(in))
 				{
@@ -71,7 +71,7 @@ namespace diy
 					return false;
 				}
 			}
-			else if (!stricmp(buffer, "lookat"))
+			else if (!_stricmp(buffer, "lookat"))
 			{
 				if (!LookAt.ParseFromFStream(in))
 				{
@@ -80,7 +80,7 @@ namespace diy
 					return false;
 				}
 			}
-			else if (!stricmp(buffer, "head"))
+			else if (!_stricmp(buffer, "head"))
 			{
 				in >> Head;
 				if (!in.good())
@@ -90,7 +90,7 @@ namespace diy
 					return false;
 				}
 			}
-			else if (!stricmp(buffer, "pich"))
+			else if (!_stricmp(buffer, "pich"))
 			{
 				in >> Pich;
 				if (!in.good())
@@ -100,7 +100,7 @@ namespace diy
 					return false;
 				}
 			}
-			else if (!stricmp(buffer, "ortho"))
+			else if (!_stricmp(buffer, "ortho"))
 			{
 				in >> Ortho;
 				if (!in.good())
@@ -110,7 +110,7 @@ namespace diy
 					return false;
 				}
 			}
-			else if (!stricmp(buffer, "zoom2"))
+			else if (!_stricmp(buffer, "zoom2"))
 			{
 				in >> Zoom2;
 				if (!in.good())
@@ -120,7 +120,7 @@ namespace diy
 					return false;
 				}
 			}
-			else if (!stricmp(buffer, "amb"))
+			else if (!_stricmp(buffer, "amb"))
 			{
 				if (!Ambient.ParseFromFStream(in))
 				{
@@ -129,7 +129,7 @@ namespace diy
 					return false;
 				}
 			}
-			else if (!stricmp(buffer, "dirlights"))
+			else if (!_stricmp(buffer, "dirlights"))
 			{
 				int lightCount;
 				in >> lightCount;
@@ -158,7 +158,7 @@ namespace diy
 						in.seekg(pos);
 						return false;
 					}
-					if (!stricmp(buffer, "light"))
+					if (!_stricmp(buffer, "light"))
 					{
 						if (!mqo_light->ParseFromFStream(in))
 						{

@@ -59,8 +59,8 @@ namespace diy
 
 		DIYLIB_API void End(void);
 
-		std::string GetShaderInfoLog(int type);
-		std::string GetProgramInfoLog(void);
+		DIYLIB_API const char* GetShaderInfoLog(int type);
+		DIYLIB_API const char* GetProgramInfoLog(void);
 
 		DIYLIB_API unsigned int GetSubroutineIndex(int type, const char* name);
 		DIYLIB_API int GetSubroutineUniformLocation(int type, const char* name);

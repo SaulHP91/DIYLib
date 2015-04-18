@@ -56,7 +56,7 @@ namespace diy
 				in.seekg(pos);
 				return false;
 			}
-			if (!stricmp(buffer, "dir"))
+			if (!_stricmp(buffer, "dir"))
 			{
 				if (!Direction.ParseFromFStream(in))
 				{
@@ -65,7 +65,7 @@ namespace diy
 					return false;
 				}
 			}
-			else if (!stricmp(buffer, "color"))
+			else if (!_stricmp(buffer, "color"))
 			{
 				if (!Color.ParseFromFStream(in))
 				{

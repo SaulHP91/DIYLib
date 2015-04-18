@@ -55,6 +55,12 @@
     <Filter Include="Source Files\SmdFile">
       <UniqueIdentifier>{bfbeaae0-dafb-47a6-97bd-b04cfb82303a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Selector">
+      <UniqueIdentifier>{8f8d39a5-f099-48d1-9091-b4d4f261a281}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Selector">
+      <UniqueIdentifier>{3c2e4435-945f-473f-8882-23b46065c4ff}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\diy\shader.hpp">
@@ -147,6 +153,24 @@
     <ClInclude Include="..\source\smd\smdVertex.hpp">
       <Filter>Header Files\SmdFile</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\diy\selectable.hpp">
+      <Filter>Header Files\Selector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\selector.hpp">
+      <Filter>Header Files\Selector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\selectableSphere.hpp">
+      <Filter>Header Files\Selector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\intersection.hpp">
+      <Filter>Header Files\Selector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\selectableMesh.hpp">
+      <Filter>Header Files\Selector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\selectablePointCloud.hpp">
+      <Filter>Header Files\Selector</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\source\obj\mtlColorRGB.cpp">
@@ -212,29 +236,47 @@
     <ClCompile Include="..\source\mqo\mqoVector.cpp">
       <Filter>Source Files\MqoFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\smd\smdbone.cpp">
+    <ClCompile Include="..\source\smd\smdBone.cpp">
       <Filter>Source Files\SmdFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\smd\smdface.cpp">
+    <ClCompile Include="..\source\smd\smdFace.cpp">
       <Filter>Source Files\SmdFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\smd\smdfile.cpp">
+    <ClCompile Include="..\source\smd\smdFile.cpp">
       <Filter>Source Files\SmdFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\smd\smdframe.cpp">
+    <ClCompile Include="..\source\smd\smdFrame.cpp">
       <Filter>Source Files\SmdFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\smd\smdskinweight.cpp">
+    <ClCompile Include="..\source\smd\smdSkinWeight.cpp">
       <Filter>Source Files\SmdFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\smd\smdtexcoord.cpp">
+    <ClCompile Include="..\source\smd\smdTexCoord.cpp">
       <Filter>Source Files\SmdFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\smd\smdvector.cpp">
+    <ClCompile Include="..\source\smd\smdVector.cpp">
       <Filter>Source Files\SmdFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\smd\smdvertex.cpp">
+    <ClCompile Include="..\source\smd\smdVertex.cpp">
       <Filter>Source Files\SmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\selectable.cpp">
+      <Filter>Source Files\Selector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\selector.cpp">
+      <Filter>Source Files\Selector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\intersection.cpp">
+      <Filter>Source Files\Selector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\selectableSphere.cpp">
+      <Filter>Source Files\Selector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\selectableMesh.cpp">
+      <Filter>Source Files\Selector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\selectablePointCloud.cpp">
+      <Filter>Source Files\Selector</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
