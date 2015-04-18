@@ -1,7 +1,7 @@
 #include <gl/glew.h>
 
-#include "diy/camera.hpp"
-#include "diy/shader.hpp"
+#include <diy/camera.hpp>
+#include <diy/shader.hpp>
 
 #include <glm/ext.hpp>
 
@@ -208,7 +208,7 @@ namespace diy
 		glLoadMatrixf(glm::value_ptr(mFinalMatrix));
 	}
 
-#include "pivot.c"
+#include <target.c>
 
 	void Camera::RenderPivot(Camera* camera)
 	{
@@ -266,7 +266,7 @@ namespace diy
 		mPivotShader.VertexAttribPointer(GL_FLOAT_VEC3, "aPosition", 0);
 
 		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, mPivotFaceBuffer);
-		glDrawElements(GL_TRIANGLES, 3 * pivot_faces, GL_UNSIGNED_INT, 0);
+		glDrawElements(GL_TRIANGLES, 3 * target_faces, GL_UNSIGNED_INT, 0);
 
 		glBindBuffer(GL_ARRAY_BUFFER, 0);
 		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
@@ -1639,11 +1639,11 @@ namespace diy
 	{
 		glGenBuffers(1, &mPivotPositionBuffer);
 		glBindBuffer(GL_ARRAY_BUFFER, mPivotPositionBuffer);
-		glBufferData(GL_ARRAY_BUFFER, pivot_vertices * 3 * sizeof(float), pivot_v, GL_STATIC_DRAW);
+		glBufferData(GL_ARRAY_BUFFER, target_vertices * 3 * sizeof(float), target_v, GL_STATIC_DRAW);
 
 		glGenBuffers(1, &mPivotFaceBuffer);
 		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, mPivotFaceBuffer);
-		glBufferData(GL_ELEMENT_ARRAY_BUFFER, pivot_faces * 3 * sizeof(unsigned int), pivot_f, GL_STATIC_DRAW);
+		glBufferData(GL_ELEMENT_ARRAY_BUFFER, target_faces * 3 * sizeof(unsigned int), target_f, GL_STATIC_DRAW);
 
 		mPivotShader.CompileSource("uniform mat4 uFTransform;attribute vec3 aPosition;void main(){gl_Position = uFTransform * vec4(aPosition, 1.0);}", GL_VERTEX_SHADER);
 

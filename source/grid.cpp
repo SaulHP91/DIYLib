@@ -1,7 +1,7 @@
 #include <gl/glew.h>
 
-#include "diy/grid.hpp"
-#include "diy/camera.hpp"
+#include <diy/grid.hpp>
+#include <diy/camera.hpp>
 
 #include <glm/ext.hpp>
 

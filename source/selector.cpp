@@ -1,6 +1,6 @@
-#include "diy\selector.hpp"
-#include "diy\selectable.hpp"
-#include "diy\camera.hpp"
+#include <diy/selector.hpp>
+#include <diy/selectable.hpp>
+#include <diy/camera.hpp>
 
 #include <algorithm>
 

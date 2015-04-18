@@ -1,8 +1,8 @@
 #include <gl/glew.h>
 
-#include "diy/axes.hpp"
-#include "diy/camera.hpp"
-#include "diy/shader.hpp"
+#include <diy/axes.hpp>
+#include <diy/camera.hpp>
+#include <diy/shader.hpp>
 
 #include <glm/ext.hpp>
 
@@ -62,10 +62,10 @@ namespace diy
 		return mSize;
 	}
 
-#include "axis.c"
-#include "x_upper.c"
-#include "y_upper.c"
-#include "z_upper.c"
+#include <axis.c>
+#include <x_upper.c>
+#include <y_upper.c>
+#include <z_upper.c>
 
 	void Axes::Render(Camera* camera)
 	{

@@ -13,15 +13,18 @@
   <ItemGroup>
     <ClInclude Include="..\include\diy\axes.hpp" />
     <ClInclude Include="..\include\diy\camera.hpp" />
-    <ClInclude Include="..\include\diy\DIY.hpp" />
+    <ClInclude Include="..\include\diy\diy.hpp" />
     <ClInclude Include="..\include\diy\grid.hpp" />
     <ClInclude Include="..\include\diy\intersection.hpp" />
+    <ClInclude Include="..\include\diy\manipulator.hpp" />
+    <ClInclude Include="..\include\diy\matrixStack.hpp" />
     <ClInclude Include="..\include\diy\selectable.hpp" />
     <ClInclude Include="..\include\diy\selectableMesh.hpp" />
     <ClInclude Include="..\include\diy\selectablePointCloud.hpp" />
     <ClInclude Include="..\include\diy\selectableSphere.hpp" />
     <ClInclude Include="..\include\diy\selector.hpp" />
     <ClInclude Include="..\include\diy\shader.hpp" />
+    <ClInclude Include="..\include\glm\own.hpp" />
     <ClInclude Include="..\source\mqo\mqoFace.hpp" />
     <ClInclude Include="..\source\mqo\mqoFile.hpp" />
     <ClInclude Include="..\source\mqo\mqoLight.hpp" />
@@ -53,6 +56,8 @@
     <ClCompile Include="..\source\camera.cpp" />
     <ClCompile Include="..\source\grid.cpp" />
     <ClCompile Include="..\source\intersection.cpp" />
+    <ClCompile Include="..\source\manipulator.cpp" />
+    <ClCompile Include="..\source\matrixStack.cpp" />
     <ClCompile Include="..\source\mqo\mqoFace.cpp" />
     <ClCompile Include="..\source\mqo\mqoFile.cpp" />
     <ClCompile Include="..\source\mqo\mqoLight.cpp" />

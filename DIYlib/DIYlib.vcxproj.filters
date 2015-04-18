@@ -13,163 +13,190 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\ObjFile">
-      <UniqueIdentifier>{180c4ed4-ef93-44db-8ce7-5dc0cfb1da29}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\ObjFile">
       <UniqueIdentifier>{40ded48b-1e92-46fa-b827-79bc83121f3b}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Shader">
       <UniqueIdentifier>{5c20a261-b2a2-480e-b63a-5a796b451df0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Camera">
-      <UniqueIdentifier>{4db271cc-8885-4741-ac86-3e041b9dac56}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Camera">
       <UniqueIdentifier>{de8c6ee5-70d3-4ada-9f5d-4e2c05f0f779}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Axes">
-      <UniqueIdentifier>{0ec160e8-b9a9-4699-9eae-22677e539fda}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Axes">
       <UniqueIdentifier>{0c74ed8e-672c-49d4-b332-4748d90b088c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Shader">
-      <UniqueIdentifier>{51add403-d0d8-4b71-bb67-8072ecae2ff6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Grid">
-      <UniqueIdentifier>{9910814b-86f1-400e-a854-91dba64510bf}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Grid">
       <UniqueIdentifier>{ef03a184-b165-46c7-8fc4-f16a2dd0fdcf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\MqoFile">
-      <UniqueIdentifier>{ee22a742-3ffe-4bae-b964-d8986de6595f}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\MqoFile">
       <UniqueIdentifier>{e330d2b5-2386-4b34-b210-cee07b4ae66c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\SmdFile">
-      <UniqueIdentifier>{7bd76f18-3b78-409c-bf63-fb06f24e618d}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\SmdFile">
       <UniqueIdentifier>{bfbeaae0-dafb-47a6-97bd-b04cfb82303a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Selector">
-      <UniqueIdentifier>{8f8d39a5-f099-48d1-9091-b4d4f261a281}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Selector">
       <UniqueIdentifier>{3c2e4435-945f-473f-8882-23b46065c4ff}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Manipulator">
+      <UniqueIdentifier>{c5ef303c-90bd-4cb9-b54d-07f3154121df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MatrixStack">
+      <UniqueIdentifier>{6596b338-9ae5-4c4f-b2a7-a9bd2c2de249}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\glm">
+      <UniqueIdentifier>{c4c94bb1-6fbc-4db8-8d0a-667436b78107}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\diy">
+      <UniqueIdentifier>{5b75be55-4d25-4903-bc5a-2ed9b238b663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\diy\ObjFile">
+      <UniqueIdentifier>{180c4ed4-ef93-44db-8ce7-5dc0cfb1da29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\diy\Shader">
+      <UniqueIdentifier>{51add403-d0d8-4b71-bb67-8072ecae2ff6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\diy\SmdFile">
+      <UniqueIdentifier>{7bd76f18-3b78-409c-bf63-fb06f24e618d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\diy\Selector">
+      <UniqueIdentifier>{8f8d39a5-f099-48d1-9091-b4d4f261a281}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\diy\MatrixStack">
+      <UniqueIdentifier>{de629649-0d3c-4674-a10c-3644e46cf61d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\diy\Camera">
+      <UniqueIdentifier>{4db271cc-8885-4741-ac86-3e041b9dac56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\diy\Grid">
+      <UniqueIdentifier>{9910814b-86f1-400e-a854-91dba64510bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\diy\MqoFile">
+      <UniqueIdentifier>{ee22a742-3ffe-4bae-b964-d8986de6595f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\diy\Manipulator">
+      <UniqueIdentifier>{dc8fedf0-b256-4f93-8642-9e61cb42b055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\diy\Axes">
+      <UniqueIdentifier>{0ec160e8-b9a9-4699-9eae-22677e539fda}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\diy\shader.hpp">
-      <Filter>Header Files\Shader</Filter>
+      <Filter>Header Files\diy\Shader</Filter>
     </ClInclude>
     <ClInclude Include="..\include\diy\camera.hpp">
-      <Filter>Header Files\Camera</Filter>
+      <Filter>Header Files\diy\Camera</Filter>
     </ClInclude>
     <ClInclude Include="..\include\diy\axes.hpp">
-      <Filter>Header Files\Axes</Filter>
+      <Filter>Header Files\diy\Axes</Filter>
     </ClInclude>
     <ClInclude Include="..\include\diy\grid.hpp">
-      <Filter>Header Files\Grid</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\diy\DIY.hpp">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\diy\Grid</Filter>
     </ClInclude>
     <ClInclude Include="..\source\obj\mtlColorRGB.hpp">
-      <Filter>Header Files\ObjFile</Filter>
+      <Filter>Header Files\diy\ObjFile</Filter>
     </ClInclude>
     <ClInclude Include="..\source\obj\mtlFile.hpp">
-      <Filter>Header Files\ObjFile</Filter>
+      <Filter>Header Files\diy\ObjFile</Filter>
     </ClInclude>
     <ClInclude Include="..\source\obj\mtlMaterial.hpp">
-      <Filter>Header Files\ObjFile</Filter>
+      <Filter>Header Files\diy\ObjFile</Filter>
     </ClInclude>
     <ClInclude Include="..\source\obj\objFace.hpp">
-      <Filter>Header Files\ObjFile</Filter>
+      <Filter>Header Files\diy\ObjFile</Filter>
     </ClInclude>
     <ClInclude Include="..\source\obj\objFile.hpp">
-      <Filter>Header Files\ObjFile</Filter>
+      <Filter>Header Files\diy\ObjFile</Filter>
     </ClInclude>
     <ClInclude Include="..\source\obj\objIndexedVertex.hpp">
-      <Filter>Header Files\ObjFile</Filter>
+      <Filter>Header Files\diy\ObjFile</Filter>
     </ClInclude>
     <ClInclude Include="..\source\obj\objTexCoord.hpp">
-      <Filter>Header Files\ObjFile</Filter>
+      <Filter>Header Files\diy\ObjFile</Filter>
     </ClInclude>
     <ClInclude Include="..\source\obj\objVector.hpp">
-      <Filter>Header Files\ObjFile</Filter>
+      <Filter>Header Files\diy\ObjFile</Filter>
     </ClInclude>
     <ClInclude Include="..\source\mqo\mqoFace.hpp">
-      <Filter>Header Files\MqoFile</Filter>
+      <Filter>Header Files\diy\MqoFile</Filter>
     </ClInclude>
     <ClInclude Include="..\source\mqo\mqoFile.hpp">
-      <Filter>Header Files\MqoFile</Filter>
+      <Filter>Header Files\diy\MqoFile</Filter>
     </ClInclude>
     <ClInclude Include="..\source\mqo\mqoLight.hpp">
-      <Filter>Header Files\MqoFile</Filter>
+      <Filter>Header Files\diy\MqoFile</Filter>
     </ClInclude>
     <ClInclude Include="..\source\mqo\mqoMaterial.hpp">
-      <Filter>Header Files\MqoFile</Filter>
+      <Filter>Header Files\diy\MqoFile</Filter>
     </ClInclude>
     <ClInclude Include="..\source\mqo\mqoObject.hpp">
-      <Filter>Header Files\MqoFile</Filter>
+      <Filter>Header Files\diy\MqoFile</Filter>
     </ClInclude>
     <ClInclude Include="..\source\mqo\mqoScene.hpp">
-      <Filter>Header Files\MqoFile</Filter>
+      <Filter>Header Files\diy\MqoFile</Filter>
     </ClInclude>
     <ClInclude Include="..\source\mqo\mqoString.hpp">
-      <Filter>Header Files\MqoFile</Filter>
+      <Filter>Header Files\diy\MqoFile</Filter>
     </ClInclude>
     <ClInclude Include="..\source\mqo\mqoVector.hpp">
-      <Filter>Header Files\MqoFile</Filter>
+      <Filter>Header Files\diy\MqoFile</Filter>
     </ClInclude>
     <ClInclude Include="..\source\mqo\mqoTexCoord.hpp">
-      <Filter>Header Files\MqoFile</Filter>
+      <Filter>Header Files\diy\MqoFile</Filter>
     </ClInclude>
     <ClInclude Include="..\source\smd\smdBone.hpp">
-      <Filter>Header Files\SmdFile</Filter>
+      <Filter>Header Files\diy\SmdFile</Filter>
     </ClInclude>
     <ClInclude Include="..\source\smd\smdFace.hpp">
-      <Filter>Header Files\SmdFile</Filter>
+      <Filter>Header Files\diy\SmdFile</Filter>
     </ClInclude>
     <ClInclude Include="..\source\smd\smdFile.hpp">
-      <Filter>Header Files\SmdFile</Filter>
+      <Filter>Header Files\diy\SmdFile</Filter>
     </ClInclude>
     <ClInclude Include="..\source\smd\smdFrame.hpp">
-      <Filter>Header Files\SmdFile</Filter>
+      <Filter>Header Files\diy\SmdFile</Filter>
     </ClInclude>
     <ClInclude Include="..\source\smd\smdSkinWeight.hpp">
-      <Filter>Header Files\SmdFile</Filter>
+      <Filter>Header Files\diy\SmdFile</Filter>
     </ClInclude>
     <ClInclude Include="..\source\smd\smdTexCoord.hpp">
-      <Filter>Header Files\SmdFile</Filter>
+      <Filter>Header Files\diy\SmdFile</Filter>
     </ClInclude>
     <ClInclude Include="..\source\smd\smdVector.hpp">
-      <Filter>Header Files\SmdFile</Filter>
+      <Filter>Header Files\diy\SmdFile</Filter>
     </ClInclude>
     <ClInclude Include="..\source\smd\smdVertex.hpp">
-      <Filter>Header Files\SmdFile</Filter>
+      <Filter>Header Files\diy\SmdFile</Filter>
     </ClInclude>
     <ClInclude Include="..\include\diy\selectable.hpp">
-      <Filter>Header Files\Selector</Filter>
+      <Filter>Header Files\diy\Selector</Filter>
     </ClInclude>
     <ClInclude Include="..\include\diy\selector.hpp">
-      <Filter>Header Files\Selector</Filter>
+      <Filter>Header Files\diy\Selector</Filter>
     </ClInclude>
     <ClInclude Include="..\include\diy\selectableSphere.hpp">
-      <Filter>Header Files\Selector</Filter>
+      <Filter>Header Files\diy\Selector</Filter>
     </ClInclude>
     <ClInclude Include="..\include\diy\intersection.hpp">
-      <Filter>Header Files\Selector</Filter>
+      <Filter>Header Files\diy\Selector</Filter>
     </ClInclude>
     <ClInclude Include="..\include\diy\selectableMesh.hpp">
-      <Filter>Header Files\Selector</Filter>
+      <Filter>Header Files\diy\Selector</Filter>
     </ClInclude>
     <ClInclude Include="..\include\diy\selectablePointCloud.hpp">
-      <Filter>Header Files\Selector</Filter>
+      <Filter>Header Files\diy\Selector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\manipulator.hpp">
+      <Filter>Header Files\diy\Manipulator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\matrixStack.hpp">
+      <Filter>Header Files\diy\MatrixStack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\diy.hpp">
+      <Filter>Header Files\diy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\glm\own.hpp">
+      <Filter>Header Files\glm</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -277,6 +304,12 @@
     </ClCompile>
     <ClCompile Include="..\source\selectablePointCloud.cpp">
       <Filter>Source Files\Selector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\manipulator.cpp">
+      <Filter>Source Files\Manipulator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\matrixStack.cpp">
+      <Filter>Source Files\MatrixStack</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,7 +1,7 @@
 #ifndef SELECTABLESPHERE_HPP
 #define SELECTABLESPHERE_HPP
 
-#include "diy\selectable.hpp"
+#include <diy\selectable.hpp>
 
 #ifdef DIYLIB_EXPORTS
 #define DIYLIB_API __declspec(dllexport)

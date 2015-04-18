@@ -1,7 +1,7 @@
 #ifndef SELECTABLEPOINTCLOUD_HPP
 #define SELECTABLEPOINTCLOUD_HPP
 
-#include "diy\selectable.hpp"
+#include <diy\selectable.hpp>
 
 #ifdef DIYLIB_EXPORTS
 #define DIYLIB_API __declspec(dllexport)

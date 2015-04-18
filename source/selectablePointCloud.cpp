@@ -1,6 +1,6 @@
-#include "diy\selectablePointCloud.hpp"
-#include "diy\camera.hpp"
-#include "diy\intersection.hpp"
+#include <diy/selectablePointCloud.hpp>
+#include <diy/camera.hpp>
+#include <diy/intersection.hpp>
 
 #include <glm/glm.hpp>
 

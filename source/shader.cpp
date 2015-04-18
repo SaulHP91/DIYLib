@@ -1,6 +1,6 @@
 #include <gl/glew.h>
 
-#include "diy/shader.hpp"
+#include <diy/shader.hpp>
 
 #include <fstream>
 #include <vector>
