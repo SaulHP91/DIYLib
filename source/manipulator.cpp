@@ -1,6 +1,7 @@
 #include <diy/manipulator.hpp>
 #include <diy/camera.hpp>
 #include <diy/selector.hpp>
+#include <diy/selectable.hpp>
 #include <diy/selectableMesh.hpp>
 #include <diy/matrixStack.hpp>
 #include <diy/shader.hpp>

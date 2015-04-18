@@ -79,6 +79,24 @@
     <Filter Include="Header Files\diy\Axes">
       <UniqueIdentifier>{0ec160e8-b9a9-4699-9eae-22677e539fda}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\diy\Font">
+      <UniqueIdentifier>{c78bf709-857f-472c-aeb7-61e1ce424146}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Font">
+      <UniqueIdentifier>{04db3174-56cd-4dd8-aa80-df447ba4a397}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\diy\TagCloud">
+      <UniqueIdentifier>{200d8510-39b4-499b-8a16-fd8080e06641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TagCloud">
+      <UniqueIdentifier>{1324e4d8-5f19-4fe1-96dd-2e4bfaa6dacf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\diy\ColorMap">
+      <UniqueIdentifier>{cc2b15ab-8a45-4981-9bba-4afc31633c28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ColorMap">
+      <UniqueIdentifier>{855d6c87-939d-423a-b0fd-bec045e095bb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\diy\shader.hpp">
@@ -198,6 +216,18 @@
     <ClInclude Include="..\include\glm\own.hpp">
       <Filter>Header Files\glm</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\diy\font.hpp">
+      <Filter>Header Files\diy\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\tag.hpp">
+      <Filter>Header Files\diy\TagCloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\tagCloud.hpp">
+      <Filter>Header Files\diy\TagCloud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\colorMap.hpp">
+      <Filter>Header Files\diy\ColorMap</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\source\obj\mtlColorRGB.cpp">
@@ -310,6 +340,18 @@
     </ClCompile>
     <ClCompile Include="..\source\matrixStack.cpp">
       <Filter>Source Files\MatrixStack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\font.cpp">
+      <Filter>Source Files\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\tag.cpp">
+      <Filter>Source Files\TagCloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\tagCloud.cpp">
+      <Filter>Source Files\TagCloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\colorMap.cpp">
+      <Filter>Source Files\ColorMap</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
