@@ -1,6 +1,6 @@
-#include <diy/selector.hpp>
-#include <diy/selectable.hpp>
-#include <diy/camera.hpp>
+#include <diy/Selector.hpp>
+#include <diy/Selectable.hpp>
+#include <diy/Camera.hpp>
 
 #include <algorithm>
 
@@ -8,15 +8,29 @@ namespace diy
 {
 
 	Selector::Selector(void) :
+		mEnabled(true),
+		mCamera(0),
 		mSelected(0),
-		mOldSelected(0)
+		mOldSelected(0),
+		mMouseDown(false),
+		mDrag(false)
 	{
 		;
 	}
 
 	Selector::~Selector(void)
 	{
-		ClearSelectables();
+		Clear();
+	}
+
+	void Selector::SetEnabled(bool enabled)
+	{
+		mEnabled = true;
+	}
+
+	bool Selector::GetEnabled(void)
+	{
+		return mEnabled;
 	}
 
 	void Selector::SetCamera(Camera* camera)
@@ -31,6 +45,11 @@ namespace diy
 
 	void Selector::Click(void)
 	{
+		if (!mEnabled)
+		{
+			return;
+		}
+
 		if (!mSelected)
 		{
 			return;
@@ -46,6 +65,11 @@ namespace diy
 
 	void Selector::DoubleClick(void)
 	{
+		if (!mEnabled)
+		{
+			return;
+		}
+
 		if (!mSelected)
 		{
 			return;
@@ -61,6 +85,11 @@ namespace diy
 
 	void Selector::MouseDown(glm::vec2 mousePos)
 	{
+		if (!mEnabled)
+		{
+			return;
+		}
+
 		if (!mSelected)
 		{
 			return;
@@ -72,10 +101,17 @@ namespace diy
 		}
 
 		mSelected->mOnMouseDown(mSelected, mousePos);
+
+		mMouseDown = true;
 	}
 
 	void Selector::MouseMove(glm::vec2 mousePos)
 	{
+		if (!mEnabled)
+		{
+			return;
+		}
+
 		if (!mCamera)
 		{
 			return;
@@ -88,6 +124,24 @@ namespace diy
 
 		if (mSelected)
 		{
+			if (mMouseDown && !mDrag && mSelected->mOnEnterDrag)
+			{
+				mDrag = mSelected->mOnEnterDrag(mSelected, mousePos);
+			}
+
+			if (mDrag)
+			{
+				if (mSelected->mOnDragMove)
+				{
+					mDrag = mSelected->mOnDragMove(mSelected, mousePos);
+				}
+			}
+
+			if (mDrag)
+			{
+				return;
+			}
+
 			if (mSelected->mOnMouseMove)
 			{
 				mSelected->mOnMouseMove(mSelected, mousePos);
@@ -101,6 +155,7 @@ namespace diy
 		float minDistance;
 		mOldSelected = mSelected;
 		mSelected = 0;
+
 		for (std::vector<Selectable*>::iterator selectable = mSelectables.begin(); selectable != mSelectables.end(); ++selectable)
 		{
 			if (!(*selectable)->mEnabled)
@@ -108,7 +163,7 @@ namespace diy
 				continue;
 			}
 
-			if ((*selectable)->Pick(origin, direction))
+			if ((*selectable)->Intersect(origin, direction))
 			{
 				if (mSelected)
 				{
@@ -150,37 +205,45 @@ namespace diy
 			{
 				mOldSelected->mOnExit(mOldSelected);
 			}
+
+			mMouseDown = false;
+			mDrag = false;
 		}
 	}
 
 	void Selector::MouseUp(glm::vec2 mousePos)
 	{
+		if (!mEnabled)
+		{
+			return;
+		}
+
 		if (!mSelected)
 		{
 			return;
 		}
 
-		if (!mSelected->mOnMouseUp)
+		if (mDrag && mSelected->mOnDrop)
 		{
-			return;
+			mSelected->mOnDrop(mSelected, mousePos);
 		}
 
-		mSelected->mOnMouseUp(mSelected, mousePos);
+		if (mSelected->mOnMouseUp)
+		{
+			mSelected->mOnMouseUp(mSelected, mousePos);
+		}
+
+		mMouseDown = false;
+		mDrag = false;
 	}
 
-	void Selector::AddSelectable(Selectable* selectable)
+	void Selector::Add(Selectable* selectable)
 	{
-		std::vector<Selectable*>::iterator iter = find(mSelectables.begin(), mSelectables.end(), selectable);
-
-		if (iter != mSelectables.end())
-		{
-			return;
-		}
-
+		selectable->mSelector = this;
 		mSelectables.push_back(selectable);
 	}
 
-	void Selector::DeleteSelectable(Selectable* selectable)
+	void Selector::Delete(Selectable* selectable)
 	{
 		std::vector<Selectable*>::iterator iter = find(mSelectables.begin(), mSelectables.end(), selectable);
 
@@ -189,7 +252,17 @@ namespace diy
 			return;
 		}
 
-		if ((*iter)->mSelector == this)
+		if (*iter == mOldSelected)
+		{
+			mOldSelected = nullptr;
+		}
+
+		if (*iter == mSelected)
+		{
+			mSelected = nullptr;
+		}
+
+		if ((*iter)->mCreator == this)
 		{
 			delete *iter;
 		}
@@ -197,11 +270,11 @@ namespace diy
 		mSelectables.erase(iter);
 	}
 
-	void Selector::ClearSelectables(void)
+	void Selector::Clear(void)
 	{
 		for (std::vector<Selectable*>::iterator selectable = mSelectables.begin(); selectable != mSelectables.end(); ++selectable)
 		{
-			if ((*selectable)->mSelector == this)
+			if ((*selectable)->mCreator == this)
 			{
 				delete *selectable;
 			}

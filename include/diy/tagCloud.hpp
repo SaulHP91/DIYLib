@@ -27,16 +27,10 @@ namespace diy
 		DIYLIB_API void SetCenter(glm::vec3 center);
 		DIYLIB_API glm::vec3 GetCenter(void);
 
-		DIYLIB_API Tag* NewTag(std::string text = std::string());
-		DIYLIB_API void AddTag(Tag* tag);
-		DIYLIB_API void DeleteTag(Tag* tag);
-		DIYLIB_API void ClearTags(void);
-
-		DIYLIB_API void SetLineColor(glm::vec3 lineColor);
-		DIYLIB_API glm::vec3 GetLineColor(void);
-
-		DIYLIB_API void SetTextColor(glm::vec3 textColor);
-		DIYLIB_API glm::vec3 GetTextColor(void);
+		DIYLIB_API Tag* New(const char* text = "NewTag");
+		DIYLIB_API void Add(Tag* tag);
+		DIYLIB_API void Delete(Tag* tag);
+		DIYLIB_API void Clear(void);
 
 		DIYLIB_API void Render(Camera* camera, Font* font);
 

@@ -1,17 +1,15 @@
 #include <gl/glew.h>
 
 #include <diy/camera.hpp>
+#include <diy/vertexArrayObject.hpp>
+#include <diy/vertexBufferObject.hpp>
+#include <diy/indexBufferObject.hpp>
 #include <diy/shader.hpp>
 
 #include <glm/ext.hpp>
 
 namespace diy
 {
-
-	Shader Camera::mPivotShader;
-	unsigned int Camera::mPivotPositionBuffer = 0;
-	unsigned int Camera::mPivotFaceBuffer = 0;
-
 	Shader Camera::mCameraShader;
 	unsigned int Camera::mCameraPositionBuffer = 0;
 	unsigned int Camera::mCameraNormalBuffer = 0;
@@ -68,14 +66,21 @@ namespace diy
 		mMaxZoom(FLT_MAX),
 		mMinDistance(-FLT_MAX),
 		mMaxDistance(FLT_MAX),
-		mStyle(CustomGirl)
+		mStyle(CustomGirl),
+		mPivotShader(nullptr),
+		mPivotVAO(nullptr),
+		mPivotPositionBVO(nullptr),
+		mPivotIBO(nullptr)
 	{
 		Update();
 	}
 
 	Camera::~Camera(void)
 	{
-		;
+		delete mPivotShader;
+		delete mPivotVAO;
+		delete mPivotPositionBVO;
+		delete mPivotIBO;
 	}
 
 	void Camera::SetEnabled(bool enabled)
@@ -257,22 +262,36 @@ namespace diy
 			ftransform = mProjectionMatrix * glm::translate(glm::vec3(0.0f, 0.0f, -mDistance)) * glm::scale(glm::vec3(f));
 		}
 
-		mPivotShader.Begin();
-		mPivotShader.EnableVertexAttribArray("aPosition");
+		if (nullptr == mPivotShader)
+		{
+			mPivotShader = new Shader();
+			mPivotVAO = new VertexArrayObject();
+			mPivotPositionBVO = new VertexBufferObject();
+			mPivotIBO = new IndexBufferObject();
 
-		mPivotShader.Uniform(GL_FLOAT_MAT4, "uFTransform", 1, glm::value_ptr(ftransform));
+			mPivotPositionBVO->Data(target_vertices * 3 * sizeof(float), target_v, GL_STATIC_DRAW);
+			mPivotIBO->Data(target_faces * 3 * sizeof(unsigned int), target_f, GL_STATIC_DRAW);
 
-		glBindBuffer(GL_ARRAY_BUFFER, mPivotPositionBuffer);
-		mPivotShader.VertexAttribPointer(GL_FLOAT_VEC3, "aPosition", 0);
+			mPivotShader->CompileSource("#version 450 core\r\nlayout(location=0)in vec3 aPosition;uniform mat4 uFTransform;void main(){gl_Position = uFTransform*vec4(aPosition, 1.0);}", GL_VERTEX_SHADER);
 
-		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, mPivotFaceBuffer);
-		glDrawElements(GL_TRIANGLES, 3 * target_faces, GL_UNSIGNED_INT, 0);
+			mPivotShader->CompileSource("#version 450 core\r\nlayout(location=0)out vec4 fFragColor;void main(){fFragColor = vec4(1.0,1.0,1.0,0.5);}", GL_FRAGMENT_SHADER);
 
-		glBindBuffer(GL_ARRAY_BUFFER, 0);
-		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
-		mPivotShader.DisableVertexAttribArray("aPosition");
+			mPivotShader->Link();
 
-		mPivotShader.End();
+			mPivotShader->Begin();
+			mPivotVAO->Begin();
+			(*mPivotShader)[0] = mPivotPositionBVO->AsAttributePointer(3, GL_FLOAT);
+			mPivotIBO->Begin();
+			mPivotVAO->End();
+			mPivotShader->End();
+		}
+
+		mPivotShader->Begin();
+		(*mPivotShader)["uFTransform"] = ftransform;
+		mPivotVAO->Begin();
+		glDrawElements(GL_TRIANGLES, 3 * target_faces, GL_UNSIGNED_INT, nullptr);
+		mPivotVAO->End();
+		mPivotShader->End();
 
 		glEnable(GL_CULL_FACE);
 		glDisable(GL_BLEND);
@@ -546,10 +565,14 @@ namespace diy
 			return;
 		}
 
+		glm::mat4 oldParentMatrix = mParentMatrix;
+
 		mParentMatrix = parentMatrix;
 		mInverseParentMatrix = glm::inverse(mParentMatrix);
 		mNormalParentMatrix = glm::transpose(glm::mat3(glm::inverse(mParentMatrix)));
 		mInverseNormalParentMatrix = glm::transpose(glm::mat3(glm::inverse(mInverseParentMatrix)));
+
+		mPivot = glm::vec3(mInverseParentMatrix * oldParentMatrix * glm::vec4(mPivot, 1.0f));
 
 		Update();
 	}
@@ -1554,7 +1577,7 @@ namespace diy
 
 	void Camera::FitBoundingSphere(glm::vec3 center, float radius)
 	{
-		mPivot = center;
+		mPivot = glm::vec3(mInverseParentMatrix * glm::vec4(center, 1.0));
 		mZoom = (mDistance / mFocalDistance) * (mViewport[3] / radius);
 
 		Update();
@@ -1637,20 +1660,6 @@ namespace diy
 
 	void Camera::Initialize(void)
 	{
-		glGenBuffers(1, &mPivotPositionBuffer);
-		glBindBuffer(GL_ARRAY_BUFFER, mPivotPositionBuffer);
-		glBufferData(GL_ARRAY_BUFFER, target_vertices * 3 * sizeof(float), target_v, GL_STATIC_DRAW);
-
-		glGenBuffers(1, &mPivotFaceBuffer);
-		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, mPivotFaceBuffer);
-		glBufferData(GL_ELEMENT_ARRAY_BUFFER, target_faces * 3 * sizeof(unsigned int), target_f, GL_STATIC_DRAW);
-
-		mPivotShader.CompileSource("uniform mat4 uFTransform;attribute vec3 aPosition;void main(){gl_Position = uFTransform * vec4(aPosition, 1.0);}", GL_VERTEX_SHADER);
-
-		mPivotShader.CompileSource("void main(){gl_FragColor = vec4(1.0, 1.0, 1.0, 0.5);}", GL_FRAGMENT_SHADER);
-
-		mPivotShader.Link();
-
 		glGenBuffers(1, &mCameraPositionBuffer);
 		glBindBuffer(GL_ARRAY_BUFFER, mCameraPositionBuffer);
 		glBufferData(GL_ARRAY_BUFFER, camera_vertices * 3 * sizeof(float), camera_v, GL_STATIC_DRAW);

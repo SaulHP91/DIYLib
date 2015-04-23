@@ -9,15 +9,16 @@
 namespace diy
 {
 
-	Tag::Tag(std::string text) :
+	Tag::Tag(const char* text) :
 		mTagCloud(0),
-		mText(text),
+		mText(0),
 		mCenter(0.0f),
 		mTextColor(0.0f),
 		mLineColor(0.0f),
 		mData(0)
 	{
-		;
+		mText = new char[strlen(text) + 1];
+		strcpy(mText, text);
 	}
 
 	Tag::~Tag(void)
@@ -25,12 +26,14 @@ namespace diy
 		Clear();
 	}
 
-	void Tag::SetText(std::string text)
+	void Tag::SetText(const char* text)
 	{
-		mText = text;
+		delete[] mText;
+		mText = new char[strlen(text) + 1];
+		strcpy(mText, text);
 	}
 
-	std::string Tag::GetText(void)
+	const char* Tag::GetText(void)
 	{
 		return mText;
 	}
@@ -115,7 +118,7 @@ namespace diy
 
 		font->SetColor(mTextColor);
 
-		glm::vec4 limits = font->GetTextLimits("%s", mText.c_str());
+		glm::vec4 limits = font->GetTextLimits("%s", mText);
 		if (dir1.x > 0.0f)
 		{
 			font->SetCursor(glm::vec2(-limits[0], -limits[1] - (limits[3] - limits[1]) / 2.0f));
@@ -125,7 +128,7 @@ namespace diy
 			font->SetCursor(glm::vec2(-limits[2], -limits[1] - (limits[3] - limits[1]) / 2.0f));
 		}
 
-		font->RenderText(camera, glm::vec3(r.x, r.y, r.z), "%s", mText.c_str());
+		font->RenderText(camera, glm::vec3(r.x, r.y, r.z), "%s", mText);
 
 		glMatrixMode(GL_PROJECTION);
 		glPopMatrix();
@@ -133,7 +136,8 @@ namespace diy
 
 	void Tag::Clear(void)
 	{
-		mText.clear();
+		delete[] mText;
+		mText = nullptr;
 
 		mData = 0;
 	}

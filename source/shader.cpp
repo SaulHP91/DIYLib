@@ -701,5 +701,14 @@ namespace diy
 		glUniformSubroutinesuiv(type, count, value);
 	}
 
+	NamedShaderArgument Shader::operator[](const char* name)
+	{
+		return NamedShaderArgument(mProgram, name);
+	}
+
+	IndexedShaderArgument Shader::operator[](int location)
+	{
+		return IndexedShaderArgument(mProgram, location);
+	}
 
 }

@@ -80,7 +80,7 @@ namespace diy
 		return mFacesPointer;
 	}
 
-	bool SelectableMesh::Pick(glm::vec3 rayOrigin, glm::vec3 rayDirection)
+	bool SelectableMesh::Intersect(glm::vec3 rayOrigin, glm::vec3 rayDirection)
 	{
 		if (!mInitializedBoundingSphere)
 		{

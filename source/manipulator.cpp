@@ -88,91 +88,91 @@ namespace diy
 	{
 		mSelector = new Selector();
 
-		mSelectableXArrow = mSelector->NewSelectable<SelectableMesh>();
+		mSelectableXArrow = mSelector->New<SelectableMesh>();
 		mSelectableXArrow->SetVertexCount(arrow_vertices);
 		mSelectableXArrow->SetVerticesPointer(arrow_v);
 		mSelectableXArrow->SetFaceCount(arrow_faces);
 		mSelectableXArrow->SetFacesPointer(arrow_f);
 		mSelectableXArrow->SetData(&mXArrowName);
 
-		mSelectableYArrow = mSelector->NewSelectable<SelectableMesh>();
+		mSelectableYArrow = mSelector->New<SelectableMesh>();
 		mSelectableYArrow->SetVertexCount(arrow_vertices);
 		mSelectableYArrow->SetVerticesPointer(arrow_v);
 		mSelectableYArrow->SetFaceCount(arrow_faces);
 		mSelectableYArrow->SetFacesPointer(arrow_f);
 		mSelectableYArrow->SetData(&mYArrowName);
 
-		mSelectableZArrow = mSelector->NewSelectable<SelectableMesh>();
+		mSelectableZArrow = mSelector->New<SelectableMesh>();
 		mSelectableZArrow->SetVertexCount(arrow_vertices);
 		mSelectableZArrow->SetVerticesPointer(arrow_v);
 		mSelectableZArrow->SetFaceCount(arrow_faces);
 		mSelectableZArrow->SetFacesPointer(arrow_f);
 		mSelectableZArrow->SetData(&mZArrowName);
 
-		mSelectableXGimbal = mSelector->NewSelectable<SelectableMesh>();
+		mSelectableXGimbal = mSelector->New<SelectableMesh>();
 		mSelectableXGimbal->SetVertexCount(gimbal_vertices);
 		mSelectableXGimbal->SetVerticesPointer(gimbal_v);
 		mSelectableXGimbal->SetFaceCount(gimbal_faces);
 		mSelectableXGimbal->SetFacesPointer(gimbal_f);
 		mSelectableXGimbal->SetData(&mXGimbalName);
 
-		mSelectableYGimbal = mSelector->NewSelectable<SelectableMesh>();
+		mSelectableYGimbal = mSelector->New<SelectableMesh>();
 		mSelectableYGimbal->SetVertexCount(gimbal_vertices);
 		mSelectableYGimbal->SetVerticesPointer(gimbal_v);
 		mSelectableYGimbal->SetFaceCount(gimbal_faces);
 		mSelectableYGimbal->SetFacesPointer(gimbal_f);
 		mSelectableYGimbal->SetData(&mYGimbalName);
 
-		mSelectableZGimbal = mSelector->NewSelectable<SelectableMesh>();
+		mSelectableZGimbal = mSelector->New<SelectableMesh>();
 		mSelectableZGimbal->SetVertexCount(gimbal_vertices);
 		mSelectableZGimbal->SetVerticesPointer(gimbal_v);
 		mSelectableZGimbal->SetFaceCount(gimbal_faces);
 		mSelectableZGimbal->SetFacesPointer(gimbal_f);
 		mSelectableZGimbal->SetData(&mZGimbalName);
 
-		mSelectableXScaler = mSelector->NewSelectable<SelectableMesh>();
+		mSelectableXScaler = mSelector->New<SelectableMesh>();
 		mSelectableXScaler->SetVertexCount(scaler_vertices);
 		mSelectableXScaler->SetVerticesPointer(scaler_v);
 		mSelectableXScaler->SetFaceCount(scaler_faces);
 		mSelectableXScaler->SetFacesPointer(scaler_f);
 		mSelectableXScaler->SetData(&mXScalerName);
 
-		mSelectableYScaler = mSelector->NewSelectable<SelectableMesh>();
+		mSelectableYScaler = mSelector->New<SelectableMesh>();
 		mSelectableYScaler->SetVertexCount(scaler_vertices);
 		mSelectableYScaler->SetVerticesPointer(scaler_v);
 		mSelectableYScaler->SetFaceCount(scaler_faces);
 		mSelectableYScaler->SetFacesPointer(scaler_f);
 		mSelectableYScaler->SetData(&mYScalerName);
 
-		mSelectableZScaler = mSelector->NewSelectable<SelectableMesh>();
+		mSelectableZScaler = mSelector->New<SelectableMesh>();
 		mSelectableZScaler->SetVertexCount(scaler_vertices);
 		mSelectableZScaler->SetVerticesPointer(scaler_v);
 		mSelectableZScaler->SetFaceCount(scaler_faces);
 		mSelectableZScaler->SetFacesPointer(scaler_f);
 		mSelectableZScaler->SetData(&mZScalerName);
 
-		mSelectableXYPlane = mSelector->NewSelectable<SelectableMesh>();
+		mSelectableXYPlane = mSelector->New<SelectableMesh>();
 		mSelectableXYPlane->SetVertexCount(plane_vertices);
 		mSelectableXYPlane->SetVerticesPointer(plane_v);
 		mSelectableXYPlane->SetFaceCount(plane_faces);
 		mSelectableXYPlane->SetFacesPointer(plane_f);
 		mSelectableXYPlane->SetData(&mXYPlaneName);
 
-		mSelectableYZPlane = mSelector->NewSelectable<SelectableMesh>();
+		mSelectableYZPlane = mSelector->New<SelectableMesh>();
 		mSelectableYZPlane->SetVertexCount(plane_vertices);
 		mSelectableYZPlane->SetVerticesPointer(plane_v);
 		mSelectableYZPlane->SetFaceCount(plane_faces);
 		mSelectableYZPlane->SetFacesPointer(plane_f);
 		mSelectableYZPlane->SetData(&mYZPlaneName);
 
-		mSelectableZXPlane = mSelector->NewSelectable<SelectableMesh>();
+		mSelectableZXPlane = mSelector->New<SelectableMesh>();
 		mSelectableZXPlane->SetVertexCount(plane_vertices);
 		mSelectableZXPlane->SetVerticesPointer(plane_v);
 		mSelectableZXPlane->SetFaceCount(plane_faces);
 		mSelectableZXPlane->SetFacesPointer(plane_f);
 		mSelectableZXPlane->SetData(&mZXPlaneName);
 
-		mSelectableOriginPivot = mSelector->NewSelectable<SelectableMesh>();
+		mSelectableOriginPivot = mSelector->New<SelectableMesh>();
 		mSelectableOriginPivot->SetVertexCount(pivot_vertices);
 		mSelectableOriginPivot->SetVerticesPointer(pivot_v);
 		mSelectableOriginPivot->SetFaceCount(pivot_faces);

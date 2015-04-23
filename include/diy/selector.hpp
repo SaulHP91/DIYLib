@@ -12,6 +12,7 @@
 
 namespace diy
 {
+
 	class Camera;
 	class Selectable;
 
@@ -20,6 +21,9 @@ namespace diy
 	public:
 		DIYLIB_API Selector(void);
 		DIYLIB_API ~Selector(void);
+
+		DIYLIB_API void SetEnabled(bool enabled);
+		DIYLIB_API bool GetEnabled(void);
 
 		DIYLIB_API void SetCamera(Camera* camera);
 		DIYLIB_API Camera* GetCamera(void);
@@ -30,25 +34,31 @@ namespace diy
 		DIYLIB_API void MouseMove(glm::vec2 mousePos);
 		DIYLIB_API void MouseUp(glm::vec2 mousePos);
 
-		template<class T>T* NewSelectable(void)
+		template<class T>T* New(void)
 		{
 			mSelectables.push_back(new T());
 			mSelectables.back()->mSelector = this;
+			mSelectables.back()->mCreator = this;
 
 			return dynamic_cast<T*>(mSelectables.back());
 		}
-		DIYLIB_API void AddSelectable(Selectable* selectable);
-		DIYLIB_API void DeleteSelectable(Selectable* selectable);
-		DIYLIB_API void ClearSelectables(void);
+		DIYLIB_API void Add(Selectable* selectable);
+		DIYLIB_API void Delete(Selectable* selectable);
+		DIYLIB_API void Clear(void);
 
 		DIYLIB_API Selectable* GetSelected(void);
 
 	private:
+		bool mEnabled;
+
 		Camera* mCamera;
 
 		std::vector<Selectable*> mSelectables;
 		Selectable* mSelected;
 		Selectable* mOldSelected;
+
+		bool mMouseDown;
+		bool mDrag;
 	};
 
 }

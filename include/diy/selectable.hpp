@@ -11,16 +11,19 @@
 
 namespace diy
 {
-
-	typedef void(*SELECTABLE_ONCLICK_CALLBACK)(class Selectable* selectable);
-	typedef void(*SELECTABLE_ONDOUBLECLICK_CALLBACK)(class Selectable* selectable);
-	typedef void(*SELECTABLE_ONENTER_CALLBACK)(class Selectable* selectable);
-	typedef void(*SELECTABLE_ONMOUSEDOWN_CALLBACK)(class Selectable* selectable, glm::vec2 position);
-	typedef void(*SELECTABLE_ONMOUSEMOVE_CALLBACK)(class Selectable* selectable, glm::vec2 position);
-	typedef void(*SELECTABLE_ONMOUSEUP_CALLBACK)(class Selectable* selectable, glm::vec2 position);
-	typedef void(*SELECTABLE_ONEXIT_CALLBACK)(class Selectable* selectable);
-
+	class Selectable;
 	class Selector;
+
+	typedef void(*SELECTABLE_ONCLICK_CALLBACK)(Selectable* selectable);
+	typedef void(*SELECTABLE_ONDOUBLECLICK_CALLBACK)(Selectable* selectable);
+	typedef void(*SELECTABLE_ONENTER_CALLBACK)(Selectable* selectable);
+	typedef void(*SELECTABLE_ONMOUSEDOWN_CALLBACK)(Selectable* selectable, glm::vec2 position);
+	typedef void(*SELECTABLE_ONMOUSEMOVE_CALLBACK)(Selectable* selectable, glm::vec2 position);
+	typedef void(*SELECTABLE_ONMOUSEUP_CALLBACK)(Selectable* selectable, glm::vec2 position);
+	typedef void(*SELECTABLE_ONEXIT_CALLBACK)(Selectable* selectable);
+	typedef bool(*SELECTABLE_ONENTERDRAG_CALLBACK)(Selectable* selectable, glm::vec2 position);
+	typedef bool(*SELECTABLE_ONDRAGMOVE_CALLBACK)(Selectable* selectable, glm::vec2 position);
+	typedef void(*SELECTABLE_ONDROP_CALLBACK)(Selectable* selectable, glm::vec2 position);
 
 	class Selectable
 	{
@@ -28,10 +31,12 @@ namespace diy
 		DIYLIB_API Selectable(void);
 		DIYLIB_API virtual ~Selectable(void);
 
+		DIYLIB_API Selector* GetSelector(void);
+
 		DIYLIB_API void SetEnabled(bool enabled);
 		DIYLIB_API bool GetEnabled(void);
 
-		DIYLIB_API virtual bool Pick(glm::vec3 rayOrigin, glm::vec3 rayDirection) = 0;
+		DIYLIB_API virtual bool Intersect(glm::vec3 rayOrigin, glm::vec3 rayDirection) = 0;
 
 		DIYLIB_API glm::vec3 GetIntersection(void);
 
@@ -61,10 +66,20 @@ namespace diy
 		DIYLIB_API void SetOnMouseUp(SELECTABLE_ONMOUSEUP_CALLBACK on_mouse_up);
 		DIYLIB_API SELECTABLE_ONMOUSEUP_CALLBACK GetOnMouseUp(void);
 
+		DIYLIB_API void SetOnEnterDrag(SELECTABLE_ONENTERDRAG_CALLBACK on_enter_drag);
+		DIYLIB_API SELECTABLE_ONENTERDRAG_CALLBACK GetOnEnterDrag(void);
+
+		DIYLIB_API void SetOnDragMove(SELECTABLE_ONDRAGMOVE_CALLBACK on_drag_move);
+		DIYLIB_API SELECTABLE_ONDRAGMOVE_CALLBACK GetOnDragMove(void);
+
+		DIYLIB_API void SetOnDrop(SELECTABLE_ONDROP_CALLBACK on_drop);
+		DIYLIB_API SELECTABLE_ONDROP_CALLBACK GetOnDrop(void);
+
 	protected:
 		friend Selector;
 
 		Selector* mSelector;
+		Selector* mCreator;
 
 		bool mEnabled;
 
@@ -81,6 +96,9 @@ namespace diy
 		SELECTABLE_ONMOUSEDOWN_CALLBACK mOnMouseDown;
 		SELECTABLE_ONMOUSEMOVE_CALLBACK mOnMouseMove;
 		SELECTABLE_ONMOUSEUP_CALLBACK mOnMouseUp;
+		SELECTABLE_ONENTERDRAG_CALLBACK mOnEnterDrag;
+		SELECTABLE_ONDRAGMOVE_CALLBACK mOnDragMove;
+		SELECTABLE_ONDROP_CALLBACK mOnDrop;
 	};
 
 }

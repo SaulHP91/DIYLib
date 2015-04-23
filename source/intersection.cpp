@@ -2,6 +2,7 @@
 
 #include <cmath>
 
+#define BACKFACE_CULLING
 #define EPSILON 1.0e-6f
 
 //#define NaiveTriangleIntersection TriangleIntersection
@@ -49,6 +50,12 @@ namespace diy
 		glm::vec3 E1 = V0 - V2;
 
 		glm::vec3 N = glm::cross(E0, E1);
+#ifdef BACKFACE_CULLING
+		if (glm::dot(D, N) < 0.0f)
+		{
+			return false;
+		}
+#endif
 		float l = glm::length(N);
 		if (l == 0.0f)
 		{
@@ -110,10 +117,17 @@ namespace diy
 
 		glm::vec3 P = glm::cross(D, E2);
 		float det = glm::dot(E1, P);
+#ifdef BACKFACE_CULLING
+		if (det < EPSILON)
+		{
+			return false;
+		}
+#else
 		if (det > -EPSILON && det < EPSILON)
 		{
 			return false;
 		}
+#endif
 
 		float inv_det = 1.0f / det;
 

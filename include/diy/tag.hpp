@@ -20,11 +20,11 @@ namespace diy
 	class Tag
 	{
 	public:
-		DIYLIB_API Tag(std::string text = std::string());
+		DIYLIB_API Tag(const char* text = "NewTag");
 		DIYLIB_API ~Tag(void);
 
-		DIYLIB_API void SetText(std::string text);
-		DIYLIB_API std::string GetText(void);
+		DIYLIB_API void SetText(const char* text);
+		DIYLIB_API const char* GetText(void);
 
 		DIYLIB_API void SetCenter(glm::vec3 center);
 		DIYLIB_API glm::vec3 GetCenter(void);
@@ -46,7 +46,7 @@ namespace diy
 		friend TagCloud;
 
 		TagCloud* mTagCloud;
-		std::string mText;
+		char* mText;
 		glm::vec3 mCenter;
 		glm::vec3 mTextColor;
 		glm::vec3 mLineColor;

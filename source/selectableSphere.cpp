@@ -41,7 +41,7 @@ namespace diy
 		return mCenter;
 	}
 
-	bool SelectableSphere::Pick(glm::vec3 rayOrigin, glm::vec3 rayDirection)
+	bool SelectableSphere::Intersect(glm::vec3 rayOrigin, glm::vec3 rayDirection)
 	{
 		float out;
 		if (SphereIntersection(mCenter, mRadius, rayOrigin, rayDirection, &out))

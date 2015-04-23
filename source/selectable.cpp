@@ -1,10 +1,13 @@
 #include <diy/selectable.hpp>
+#include <diy/selector.hpp>
+#include <diy/camera.hpp>
 
 namespace diy
 {
 
 	Selectable::Selectable(void) :
 		mSelector(0),
+		mCreator(0),
 		mEnabled(true),
 		mSelected(false),
 		mData(0),
@@ -14,7 +17,10 @@ namespace diy
 		mOnEnter(0),
 		mOnMouseDown(0),
 		mOnMouseUp(0),
-		mOnExit(0)
+		mOnExit(0),
+		mOnEnterDrag(0),
+		mOnDragMove(0),
+		mOnDrop(0)
 	{
 		;
 	}
@@ -22,6 +28,11 @@ namespace diy
 	Selectable::~Selectable(void)
 	{
 		;
+	}
+
+	Selector* Selectable::GetSelector(void)
+	{
+		return mSelector;
 	}
 
 	void Selectable::SetEnabled(bool enabled)
@@ -122,6 +133,36 @@ namespace diy
 	SELECTABLE_ONMOUSEUP_CALLBACK Selectable::GetOnMouseUp(void)
 	{
 		return mOnMouseUp;
+	}
+
+	void Selectable::SetOnEnterDrag(SELECTABLE_ONENTERDRAG_CALLBACK on_enter_drag)
+	{
+		mOnEnterDrag = on_enter_drag;
+	}
+
+	SELECTABLE_ONENTERDRAG_CALLBACK Selectable::GetOnEnterDrag(void)
+	{
+		return mOnEnterDrag;
+	}
+
+	void Selectable::SetOnDragMove(SELECTABLE_ONDRAGMOVE_CALLBACK on_drag_move)
+	{
+		mOnDragMove = on_drag_move;
+	}
+
+	SELECTABLE_ONDRAGMOVE_CALLBACK Selectable::GetOnDragMove(void)
+	{
+		return mOnDragMove;
+	}
+
+	void Selectable::SetOnDrop(SELECTABLE_ONDROP_CALLBACK on_drop)
+	{
+		mOnDrop = on_drop;
+	}
+
+	SELECTABLE_ONDROP_CALLBACK Selectable::GetOnDrop(void)
+	{
+		return mOnDrop;
 	}
 
 }

@@ -1,13 +1,13 @@
 #ifndef SELECTABLEMESH_HPP
 #define SELECTABLEMESH_HPP
 
+#include <diy/selectable.hpp>
+
 #ifdef DIYLIB_EXPORTS
 #define DIYLIB_API __declspec(dllexport)
 #else
 #define DIYLIB_API __declspec(dllimport)
 #endif
-
-#include <diy/selectable.hpp>
 
 namespace diy
 {
@@ -30,7 +30,7 @@ namespace diy
 		DIYLIB_API void SetFacesPointer(const int* facesPointer);
 		DIYLIB_API const int* GetFacesPointer(void);
 
-		DIYLIB_API bool Pick(glm::vec3 rayOrigin, glm::vec3 rayDirection);
+		DIYLIB_API bool Intersect(glm::vec3 rayOrigin, glm::vec3 rayDirection);
 
 		DIYLIB_API int GetSelectedFaceIndex(void);
 

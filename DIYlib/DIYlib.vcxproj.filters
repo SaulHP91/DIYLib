@@ -228,6 +228,24 @@
     <ClInclude Include="..\include\diy\colorMap.hpp">
       <Filter>Header Files\diy\ColorMap</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\diy\attributePointer.hpp">
+      <Filter>Header Files\diy\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\vertexArrayObject.hpp">
+      <Filter>Header Files\diy\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\vertexBufferObject.hpp">
+      <Filter>Header Files\diy\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\indexBufferObject.hpp">
+      <Filter>Header Files\diy\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\namedShaderArgument.hpp">
+      <Filter>Header Files\diy\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\indexedShaderArgument.hpp">
+      <Filter>Header Files\diy\Shader</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\source\obj\mtlColorRGB.cpp">
@@ -352,6 +370,60 @@
     </ClCompile>
     <ClCompile Include="..\source\colorMap.cpp">
       <Filter>Source Files\ColorMap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\axis.c">
+      <Filter>Source Files\Axes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\camera.c">
+      <Filter>Source Files\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\arrow.c">
+      <Filter>Source Files\Manipulator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gimbal.c">
+      <Filter>Source Files\Manipulator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\pivot.c">
+      <Filter>Source Files\Manipulator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\plane.c">
+      <Filter>Source Files\Manipulator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scaler.c">
+      <Filter>Source Files\Manipulator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\target.c">
+      <Filter>Source Files\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\default.c">
+      <Filter>Source Files\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\x_upper.c">
+      <Filter>Source Files\Axes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\y_upper.c">
+      <Filter>Source Files\Axes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\z_upper.c">
+      <Filter>Source Files\Axes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vertexBufferObject.cpp">
+      <Filter>Source Files\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\indexBufferObject.cpp">
+      <Filter>Source Files\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\attributePointer.cpp">
+      <Filter>Source Files\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vertexArrayObject.cpp">
+      <Filter>Source Files\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\namedShaderArgument.cpp">
+      <Filter>Source Files\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\indexedShaderArgument.cpp">
+      <Filter>Source Files\Shader</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

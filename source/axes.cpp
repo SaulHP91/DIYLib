@@ -90,7 +90,7 @@ namespace diy
 		glm::mat4 modelViewMatrix = glm::translate(glm::vec3(-(camera->GetAspect() / 2.0f - 1.5f * f), -(0.5f - 1.5f * f), 0.0f)) * glm::scale(glm::vec3(f));
 		glm::mat4 ftransform = glm::ortho(-camera->GetAspect() / 2.0f, camera->GetAspect() / 2.0f, -0.5f, 0.5f) * modelViewMatrix;
 
-		if (R[0].z < 0.99f)
+		if (glm::abs(R[0].z) < 0.99f)
 		{
 			mXAxisShader.Begin();
 			mXAxisShader.EnableVertexAttribArray("aPosition");
@@ -126,7 +126,7 @@ namespace diy
 			mXShader.DisableVertexAttribArray("aPosition");
 			mXShader.End();
 		}
-		if (R[1].z < 0.99f)
+		if (glm::abs(R[1].z) < 0.99f)
 		{
 			mYAxisShader.Begin();
 			mYAxisShader.EnableVertexAttribArray("aPosition");
@@ -162,7 +162,7 @@ namespace diy
 			mYShader.DisableVertexAttribArray("aPosition");
 			mYShader.End();
 		}
-		if (R[2].z < 0.99f)
+		if (glm::abs(R[2].z) < 0.99f)
 		{
 			mZAxisShader.Begin();
 			mZAxisShader.EnableVertexAttribArray("aPosition");

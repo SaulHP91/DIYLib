@@ -11,12 +11,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\diy\attributePointer.hpp" />
     <ClInclude Include="..\include\diy\axes.hpp" />
     <ClInclude Include="..\include\diy\camera.hpp" />
     <ClInclude Include="..\include\diy\colorMap.hpp" />
     <ClInclude Include="..\include\diy\diy.hpp" />
     <ClInclude Include="..\include\diy\font.hpp" />
     <ClInclude Include="..\include\diy\grid.hpp" />
+    <ClInclude Include="..\include\diy\indexBufferObject.hpp" />
+    <ClInclude Include="..\include\diy\indexedShaderArgument.hpp" />
     <ClInclude Include="..\include\diy\intersection.hpp" />
     <ClInclude Include="..\include\diy\manipulator.hpp" />
     <ClInclude Include="..\include\diy\matrixStack.hpp" />
@@ -26,8 +29,11 @@
     <ClInclude Include="..\include\diy\selectableSphere.hpp" />
     <ClInclude Include="..\include\diy\selector.hpp" />
     <ClInclude Include="..\include\diy\shader.hpp" />
+    <ClInclude Include="..\include\diy\namedShaderArgument.hpp" />
     <ClInclude Include="..\include\diy\tag.hpp" />
     <ClInclude Include="..\include\diy\tagCloud.hpp" />
+    <ClInclude Include="..\include\diy\vertexArrayObject.hpp" />
+    <ClInclude Include="..\include\diy\vertexBufferObject.hpp" />
     <ClInclude Include="..\include\glm\own.hpp" />
     <ClInclude Include="..\source\mqo\mqoFace.hpp" />
     <ClInclude Include="..\source\mqo\mqoFile.hpp" />
@@ -56,11 +62,27 @@
     <ClInclude Include="..\source\smd\smdVertex.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\source\arrow.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\attributePointer.cpp" />
     <ClCompile Include="..\source\axes.cpp" />
+    <ClCompile Include="..\source\axis.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\camera.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\source\camera.cpp" />
     <ClCompile Include="..\source\colorMap.cpp" />
+    <ClCompile Include="..\source\default.c" />
     <ClCompile Include="..\source\font.cpp" />
+    <ClCompile Include="..\source\gimbal.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\source\grid.cpp" />
+    <ClCompile Include="..\source\indexBufferObject.cpp" />
+    <ClCompile Include="..\source\indexedShaderArgument.cpp" />
     <ClCompile Include="..\source\intersection.cpp" />
     <ClCompile Include="..\source\manipulator.cpp" />
     <ClCompile Include="..\source\matrixStack.cpp" />
@@ -81,12 +103,22 @@
     <ClCompile Include="..\source\obj\objIndexedVertex.cpp" />
     <ClCompile Include="..\source\obj\objTexCoord.cpp" />
     <ClCompile Include="..\source\obj\objVector.cpp" />
+    <ClCompile Include="..\source\pivot.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\plane.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\scaler.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\source\selectable.cpp" />
     <ClCompile Include="..\source\selectableMesh.cpp" />
     <ClCompile Include="..\source\selectablePointCloud.cpp" />
     <ClCompile Include="..\source\selectableSphere.cpp" />
     <ClCompile Include="..\source\selector.cpp" />
     <ClCompile Include="..\source\shader.cpp" />
+    <ClCompile Include="..\source\namedShaderArgument.cpp" />
     <ClCompile Include="..\source\smd\smdBone.cpp" />
     <ClCompile Include="..\source\smd\smdFace.cpp" />
     <ClCompile Include="..\source\smd\smdFile.cpp" />
@@ -97,6 +129,20 @@
     <ClCompile Include="..\source\smd\smdVertex.cpp" />
     <ClCompile Include="..\source\tag.cpp" />
     <ClCompile Include="..\source\tagCloud.cpp" />
+    <ClCompile Include="..\source\target.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\vertexArrayObject.cpp" />
+    <ClCompile Include="..\source\vertexBufferObject.cpp" />
+    <ClCompile Include="..\source\x_upper.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\y_upper.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\z_upper.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{072104E1-068C-46A1-8F0D-A1D21AD3E93C}</ProjectGuid>

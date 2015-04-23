@@ -11,6 +11,9 @@
 
 namespace diy
 {
+	class VertexArrayObject;
+	class VertexBufferObject;
+	class IndexBufferObject;
 	class Shader;
 
 	class Camera
@@ -269,9 +272,10 @@ namespace diy
 		void MouseMoveBlender(State state, glm::vec2 mouseDelta);
 		void MouseMoveMilkShape(State state, glm::vec2 mouseDelta);
 
-		static Shader mPivotShader;
-		static unsigned int mPivotPositionBuffer;
-		static unsigned int mPivotFaceBuffer;
+		Shader* mPivotShader;
+		VertexArrayObject* mPivotVAO;
+		VertexBufferObject* mPivotPositionBVO;
+		IndexBufferObject* mPivotIBO;
 
 		static Shader mCameraShader;
 		static unsigned int mCameraPositionBuffer;

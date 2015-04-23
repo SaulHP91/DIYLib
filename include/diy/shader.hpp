@@ -4,6 +4,9 @@
 #include <cstdarg>
 #include <string>
 
+#include<diy/namedShaderArgument.hpp>
+#include<diy/indexedShaderArgument.hpp>
+
 #ifdef DIYLIB_EXPORTS
 #define DIYLIB_API __declspec(dllexport)
 #else
@@ -67,6 +70,9 @@ namespace diy
 
 		DIYLIB_API void UniformSubroutine(int type, unsigned int value);
 		DIYLIB_API void UniformSubroutines(int type, int count, const unsigned int* value);
+
+		DIYLIB_API NamedShaderArgument operator[](const char* name);
+		DIYLIB_API IndexedShaderArgument operator[](int location);
 
 	private:
 		int mVertexShader;
