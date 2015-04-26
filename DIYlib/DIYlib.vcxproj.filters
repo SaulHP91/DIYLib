@@ -13,36 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\ObjFile">
-      <UniqueIdentifier>{40ded48b-1e92-46fa-b827-79bc83121f3b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Shader">
-      <UniqueIdentifier>{5c20a261-b2a2-480e-b63a-5a796b451df0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Camera">
-      <UniqueIdentifier>{de8c6ee5-70d3-4ada-9f5d-4e2c05f0f779}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Axes">
-      <UniqueIdentifier>{0c74ed8e-672c-49d4-b332-4748d90b088c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Grid">
-      <UniqueIdentifier>{ef03a184-b165-46c7-8fc4-f16a2dd0fdcf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\MqoFile">
-      <UniqueIdentifier>{e330d2b5-2386-4b34-b210-cee07b4ae66c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\SmdFile">
-      <UniqueIdentifier>{bfbeaae0-dafb-47a6-97bd-b04cfb82303a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Selector">
-      <UniqueIdentifier>{3c2e4435-945f-473f-8882-23b46065c4ff}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Manipulator">
-      <UniqueIdentifier>{c5ef303c-90bd-4cb9-b54d-07f3154121df}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\MatrixStack">
-      <UniqueIdentifier>{6596b338-9ae5-4c4f-b2a7-a9bd2c2de249}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\glm">
       <UniqueIdentifier>{c4c94bb1-6fbc-4db8-8d0a-667436b78107}</UniqueIdentifier>
     </Filter>
@@ -82,20 +52,98 @@
     <Filter Include="Header Files\diy\Font">
       <UniqueIdentifier>{c78bf709-857f-472c-aeb7-61e1ce424146}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Font">
-      <UniqueIdentifier>{04db3174-56cd-4dd8-aa80-df447ba4a397}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\diy\TagCloud">
       <UniqueIdentifier>{200d8510-39b4-499b-8a16-fd8080e06641}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\TagCloud">
-      <UniqueIdentifier>{1324e4d8-5f19-4fe1-96dd-2e4bfaa6dacf}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\diy\ColorMap">
       <UniqueIdentifier>{cc2b15ab-8a45-4981-9bba-4afc31633c28}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\ColorMap">
+    <Filter Include="Header Files\diy\PmdFile">
+      <UniqueIdentifier>{3f796220-02b9-4cda-b03d-71c4b630895c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\diy\TdsFile">
+      <UniqueIdentifier>{2cf17661-8846-4082-ae31-c7a7c20215e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\diy\XFile">
+      <UniqueIdentifier>{4cb89084-c201-4676-8d50-997bdab94ce6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\diy\MeshFile">
+      <UniqueIdentifier>{3db3d61e-f885-447b-89c5-47b3919ddeef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\diy\Utility">
+      <UniqueIdentifier>{86706f2b-889a-4d33-9771-d1da53b6da68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\diy\AnimFile">
+      <UniqueIdentifier>{5b88f7a7-c60d-4a1a-bd0b-83e53fb1f4dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\diy\PoseFile">
+      <UniqueIdentifier>{830d3b62-5cf3-43d1-8a7c-da0af8939322}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\glm">
+      <UniqueIdentifier>{23cdff5b-0d17-41a0-bd11-a641d357a380}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\diy">
+      <UniqueIdentifier>{0580f89e-052d-44fc-b35f-f06f36368b34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\diy\AnimFile">
+      <UniqueIdentifier>{b44a9877-0d4f-4844-8826-8476aa57d4aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\diy\Axes">
+      <UniqueIdentifier>{0c74ed8e-672c-49d4-b332-4748d90b088c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\diy\Camera">
+      <UniqueIdentifier>{de8c6ee5-70d3-4ada-9f5d-4e2c05f0f779}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\diy\ColorMap">
       <UniqueIdentifier>{855d6c87-939d-423a-b0fd-bec045e095bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\diy\Font">
+      <UniqueIdentifier>{04db3174-56cd-4dd8-aa80-df447ba4a397}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\diy\Grid">
+      <UniqueIdentifier>{ef03a184-b165-46c7-8fc4-f16a2dd0fdcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\diy\Manipulator">
+      <UniqueIdentifier>{c5ef303c-90bd-4cb9-b54d-07f3154121df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\diy\MatrixStack">
+      <UniqueIdentifier>{6596b338-9ae5-4c4f-b2a7-a9bd2c2de249}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\diy\MqoFile">
+      <UniqueIdentifier>{e330d2b5-2386-4b34-b210-cee07b4ae66c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\diy\MeshFile">
+      <UniqueIdentifier>{8229194a-edce-4d8e-910c-f33c8faff9fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\diy\Utility">
+      <UniqueIdentifier>{a9b9230c-c047-4036-bf6d-abeca1309196}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\diy\PoseFile">
+      <UniqueIdentifier>{108c7ca2-0ccc-4784-8cc5-0a7d8b78a10b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\diy\XFile">
+      <UniqueIdentifier>{758452ac-513d-436b-9899-bd2abb727690}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\diy\TdsFile">
+      <UniqueIdentifier>{918dac4b-4d01-4a71-a3f7-d36ab6633e16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\diy\ObjFile">
+      <UniqueIdentifier>{40ded48b-1e92-46fa-b827-79bc83121f3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\diy\PmdFile">
+      <UniqueIdentifier>{2c1f53db-6eb3-4216-8e99-8dd7e90f6b59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\diy\Selector">
+      <UniqueIdentifier>{3c2e4435-945f-473f-8882-23b46065c4ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\diy\Shader">
+      <UniqueIdentifier>{5c20a261-b2a2-480e-b63a-5a796b451df0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\diy\SmdFile">
+      <UniqueIdentifier>{bfbeaae0-dafb-47a6-97bd-b04cfb82303a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\diy\TagCloud">
+      <UniqueIdentifier>{1324e4d8-5f19-4fe1-96dd-2e4bfaa6dacf}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -110,81 +158,6 @@
     </ClInclude>
     <ClInclude Include="..\include\diy\grid.hpp">
       <Filter>Header Files\diy\Grid</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\obj\mtlColorRGB.hpp">
-      <Filter>Header Files\diy\ObjFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\obj\mtlFile.hpp">
-      <Filter>Header Files\diy\ObjFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\obj\mtlMaterial.hpp">
-      <Filter>Header Files\diy\ObjFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\obj\objFace.hpp">
-      <Filter>Header Files\diy\ObjFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\obj\objFile.hpp">
-      <Filter>Header Files\diy\ObjFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\obj\objIndexedVertex.hpp">
-      <Filter>Header Files\diy\ObjFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\obj\objTexCoord.hpp">
-      <Filter>Header Files\diy\ObjFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\obj\objVector.hpp">
-      <Filter>Header Files\diy\ObjFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\mqo\mqoFace.hpp">
-      <Filter>Header Files\diy\MqoFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\mqo\mqoFile.hpp">
-      <Filter>Header Files\diy\MqoFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\mqo\mqoLight.hpp">
-      <Filter>Header Files\diy\MqoFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\mqo\mqoMaterial.hpp">
-      <Filter>Header Files\diy\MqoFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\mqo\mqoObject.hpp">
-      <Filter>Header Files\diy\MqoFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\mqo\mqoScene.hpp">
-      <Filter>Header Files\diy\MqoFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\mqo\mqoString.hpp">
-      <Filter>Header Files\diy\MqoFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\mqo\mqoVector.hpp">
-      <Filter>Header Files\diy\MqoFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\mqo\mqoTexCoord.hpp">
-      <Filter>Header Files\diy\MqoFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\smd\smdBone.hpp">
-      <Filter>Header Files\diy\SmdFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\smd\smdFace.hpp">
-      <Filter>Header Files\diy\SmdFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\smd\smdFile.hpp">
-      <Filter>Header Files\diy\SmdFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\smd\smdFrame.hpp">
-      <Filter>Header Files\diy\SmdFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\smd\smdSkinWeight.hpp">
-      <Filter>Header Files\diy\SmdFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\smd\smdTexCoord.hpp">
-      <Filter>Header Files\diy\SmdFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\smd\smdVector.hpp">
-      <Filter>Header Files\diy\SmdFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\source\smd\smdVertex.hpp">
-      <Filter>Header Files\diy\SmdFile</Filter>
     </ClInclude>
     <ClInclude Include="..\include\diy\selectable.hpp">
       <Filter>Header Files\diy\Selector</Filter>
@@ -246,184 +219,1044 @@
     <ClInclude Include="..\include\diy\indexedShaderArgument.hpp">
       <Filter>Header Files\diy\Shader</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\diy\Obj\mtlColorRGB.hpp">
+      <Filter>Header Files\diy\ObjFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\Obj\mtlFile.hpp">
+      <Filter>Header Files\diy\ObjFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\Obj\mtlMaterial.hpp">
+      <Filter>Header Files\diy\ObjFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\Obj\objFace.hpp">
+      <Filter>Header Files\diy\ObjFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\Obj\objFile.hpp">
+      <Filter>Header Files\diy\ObjFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\Obj\objIndexedVertex.hpp">
+      <Filter>Header Files\diy\ObjFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\Obj\objTexCoord.hpp">
+      <Filter>Header Files\diy\ObjFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\Obj\objVector.hpp">
+      <Filter>Header Files\diy\ObjFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\obj\obj.hpp">
+      <Filter>Header Files\diy\ObjFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mqo\mqo.hpp">
+      <Filter>Header Files\diy\MqoFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mqo\mqoFace.hpp">
+      <Filter>Header Files\diy\MqoFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mqo\mqoFile.hpp">
+      <Filter>Header Files\diy\MqoFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mqo\mqoLight.hpp">
+      <Filter>Header Files\diy\MqoFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mqo\mqoMaterial.hpp">
+      <Filter>Header Files\diy\MqoFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mqo\mqoObject.hpp">
+      <Filter>Header Files\diy\MqoFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mqo\mqoScene.hpp">
+      <Filter>Header Files\diy\MqoFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mqo\mqoString.hpp">
+      <Filter>Header Files\diy\MqoFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mqo\mqoTexCoord.hpp">
+      <Filter>Header Files\diy\MqoFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mqo\mqoVector.hpp">
+      <Filter>Header Files\diy\MqoFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\pmd\pmd.hpp">
+      <Filter>Header Files\diy\PmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\pmd\pmdBone.hpp">
+      <Filter>Header Files\diy\PmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\pmd\pmdFace.hpp">
+      <Filter>Header Files\diy\PmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\pmd\pmdFile.hpp">
+      <Filter>Header Files\diy\PmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\pmd\pmdIKChain.hpp">
+      <Filter>Header Files\diy\PmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\pmd\pmdMaterial.hpp">
+      <Filter>Header Files\diy\PmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\pmd\pmdMorphTarget.hpp">
+      <Filter>Header Files\diy\PmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\pmd\pmdMorphTargetVertex.hpp">
+      <Filter>Header Files\diy\PmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\pmd\pmdTexCoord.hpp">
+      <Filter>Header Files\diy\PmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\pmd\pmdVector.hpp">
+      <Filter>Header Files\diy\PmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\pmd\pmdVertex.hpp">
+      <Filter>Header Files\diy\PmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\smd\smdBone.hpp">
+      <Filter>Header Files\diy\SmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\smd\smdFace.hpp">
+      <Filter>Header Files\diy\SmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\smd\smdFile.hpp">
+      <Filter>Header Files\diy\SmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\smd\smdFrame.hpp">
+      <Filter>Header Files\diy\SmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\smd\smdSkinWeight.hpp">
+      <Filter>Header Files\diy\SmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\smd\smdTexCoord.hpp">
+      <Filter>Header Files\diy\SmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\smd\smdVector.hpp">
+      <Filter>Header Files\diy\SmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\smd\smdVertex.hpp">
+      <Filter>Header Files\diy\SmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\smd\smd.hpp">
+      <Filter>Header Files\diy\SmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\tds\tdsChunk.hpp">
+      <Filter>Header Files\diy\TdsFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\tds\tdsChunks.hpp">
+      <Filter>Header Files\diy\TdsFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\tds\tdsColor.hpp">
+      <Filter>Header Files\diy\TdsFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\tds\tdsFace.hpp">
+      <Filter>Header Files\diy\TdsFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\tds\tdsFile.hpp">
+      <Filter>Header Files\diy\TdsFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\tds\tdsMap.hpp">
+      <Filter>Header Files\diy\TdsFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\tds\tdsMaterial.hpp">
+      <Filter>Header Files\diy\TdsFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\tds\tdsMatrix.hpp">
+      <Filter>Header Files\diy\TdsFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\tds\tdsMshMatGroup.hpp">
+      <Filter>Header Files\diy\TdsFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\tds\tdsNodeHeader.hpp">
+      <Filter>Header Files\diy\TdsFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\tds\tdsObject.hpp">
+      <Filter>Header Files\diy\TdsFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\tds\tdsObjectNode.hpp">
+      <Filter>Header Files\diy\TdsFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\tds\tdsPercentage.hpp">
+      <Filter>Header Files\diy\TdsFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\tds\tdsPoint.hpp">
+      <Filter>Header Files\diy\TdsFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\tds\tdsTexVert.hpp">
+      <Filter>Header Files\diy\TdsFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\tds\tds.hpp">
+      <Filter>Header Files\diy\TdsFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xAnimation.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xAnimationKey.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xAnimationOptions.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xAnimationSet.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xAnimTicksPerSecond.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xArray.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xColorRGB.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xColorRGBA.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xCoords2D.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xDWord.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xFile.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xFileUt.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xFloat.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xFloatKeys.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xFrame.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xFrameTransformMatrix.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xMaterial.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xMesh.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xMeshFace.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xMeshMaterialList.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xMeshNormals.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xMeshTextureCoords.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xName.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xNode.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xSkinMeshHeader.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xSkinWeights.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xString.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xTextureFileName.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xTimedFloatKeys.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xUt.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xVector.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\x.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xMatrix4X4.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\mesh.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshAnimatedVertex.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshAnimatedVertices.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshDefines.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshExporter.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshFace.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshFaces.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshFile.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshGroup.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshGroups.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshImporter.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshJoint.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshJoints.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshMaterial.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshMaterials.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshMorphTarget.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshMorphTargets.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshMorphTargetVertex.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshMorphTargetVertices.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshNode.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshNodes.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshObject.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshObjects.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshPhysics.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshRigidBodies.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshRigidBody.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshSkin.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshSkins.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshSkinWeight.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshSkinWeights.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshTexture.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshTextures.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mesh\meshVertex.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\obj\objClasses.hpp">
+      <Filter>Header Files\diy\ObjFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\diyClasses.hpp">
+      <Filter>Header Files\diy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mqo\mqoClasses.hpp">
+      <Filter>Header Files\diy\MqoFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\pmd\pmdClasses.hpp">
+      <Filter>Header Files\diy\PmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\smd\smdClasses.hpp">
+      <Filter>Header Files\diy\SmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\tds\tdsClasses.hpp">
+      <Filter>Header Files\diy\TdsFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xClasses.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\tds\tdsDefines.hpp">
+      <Filter>Header Files\diy\TdsFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\mqo\mqoDefines.hpp">
+      <Filter>Header Files\diy\MqoFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\obj\objDefines.hpp">
+      <Filter>Header Files\diy\ObjFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\pmd\pmdDefines.hpp">
+      <Filter>Header Files\diy\PmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\smd\smdDefines.hpp">
+      <Filter>Header Files\diy\SmdFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\x\xDefines.hpp">
+      <Filter>Header Files\diy\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\iKSolver.hpp">
+      <Filter>Header Files\diy\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\half.hpp">
+      <Filter>Header Files\diy\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\anim\anim.hpp">
+      <Filter>Header Files\diy\AnimFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\anim\animAnimation.hpp">
+      <Filter>Header Files\diy\AnimFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\anim\animAnimations.hpp">
+      <Filter>Header Files\diy\AnimFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\anim\animDefines.hpp">
+      <Filter>Header Files\diy\AnimFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\anim\animFile.hpp">
+      <Filter>Header Files\diy\AnimFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\anim\animKeyFrame.hpp">
+      <Filter>Header Files\diy\AnimFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\anim\animKeyFrames.hpp">
+      <Filter>Header Files\diy\AnimFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\anim\animMorphTarget.hpp">
+      <Filter>Header Files\diy\AnimFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\anim\animMorphTargets.hpp">
+      <Filter>Header Files\diy\AnimFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\anim\animNode.hpp">
+      <Filter>Header Files\diy\AnimFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\anim\animNodes.hpp">
+      <Filter>Header Files\diy\AnimFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\anim\animObject.hpp">
+      <Filter>Header Files\diy\AnimFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\anim\animObjects.hpp">
+      <Filter>Header Files\diy\AnimFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\anim\animClasses.hpp">
+      <Filter>Header Files\diy\AnimFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\pose\pose.hpp">
+      <Filter>Header Files\diy\PoseFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\pose\poseClasses.hpp">
+      <Filter>Header Files\diy\PoseFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\pose\poseDefines.hpp">
+      <Filter>Header Files\diy\PoseFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\pose\poseFile.hpp">
+      <Filter>Header Files\diy\PoseFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\pose\poseMorphTarget.hpp">
+      <Filter>Header Files\diy\PoseFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\pose\poseMorphTargets.hpp">
+      <Filter>Header Files\diy\PoseFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\pose\poseNode.hpp">
+      <Filter>Header Files\diy\PoseFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\pose\poseNodes.hpp">
+      <Filter>Header Files\diy\PoseFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\pose\poseObject.hpp">
+      <Filter>Header Files\diy\PoseFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\pose\poseObjects.hpp">
+      <Filter>Header Files\diy\PoseFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\pose\posePose.hpp">
+      <Filter>Header Files\diy\PoseFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\diy\pose\posePoses.hpp">
+      <Filter>Header Files\diy\PoseFile</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\source\obj\mtlColorRGB.cpp">
-      <Filter>Source Files\ObjFile</Filter>
+    <ClCompile Include="..\source\glm\own.cpp">
+      <Filter>Source Files\glm</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\obj\mtlFile.cpp">
-      <Filter>Source Files\ObjFile</Filter>
+    <ClCompile Include="..\source\diy\anim\animAnimation.cpp">
+      <Filter>Source Files\diy\AnimFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\obj\mtlMaterial.cpp">
-      <Filter>Source Files\ObjFile</Filter>
+    <ClCompile Include="..\source\diy\anim\animAnimations.cpp">
+      <Filter>Source Files\diy\AnimFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\obj\objFace.cpp">
-      <Filter>Source Files\ObjFile</Filter>
+    <ClCompile Include="..\source\diy\anim\animFile.cpp">
+      <Filter>Source Files\diy\AnimFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\obj\objFile.cpp">
-      <Filter>Source Files\ObjFile</Filter>
+    <ClCompile Include="..\source\diy\anim\animKeyFrame.cpp">
+      <Filter>Source Files\diy\AnimFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\obj\objIndexedVertex.cpp">
-      <Filter>Source Files\ObjFile</Filter>
+    <ClCompile Include="..\source\diy\anim\animKeyFrames.cpp">
+      <Filter>Source Files\diy\AnimFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\obj\objTexCoord.cpp">
-      <Filter>Source Files\ObjFile</Filter>
+    <ClCompile Include="..\source\diy\anim\animMorphTarget.cpp">
+      <Filter>Source Files\diy\AnimFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\obj\objVector.cpp">
-      <Filter>Source Files\ObjFile</Filter>
+    <ClCompile Include="..\source\diy\anim\animMorphTargets.cpp">
+      <Filter>Source Files\diy\AnimFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\shader.cpp">
-      <Filter>Source Files\Shader</Filter>
+    <ClCompile Include="..\source\diy\anim\animNode.cpp">
+      <Filter>Source Files\diy\AnimFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\camera.cpp">
-      <Filter>Source Files\Camera</Filter>
+    <ClCompile Include="..\source\diy\anim\animNodes.cpp">
+      <Filter>Source Files\diy\AnimFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\axes.cpp">
-      <Filter>Source Files\Axes</Filter>
+    <ClCompile Include="..\source\diy\anim\animObject.cpp">
+      <Filter>Source Files\diy\AnimFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\grid.cpp">
-      <Filter>Source Files\Grid</Filter>
+    <ClCompile Include="..\source\diy\anim\animObjects.cpp">
+      <Filter>Source Files\diy\AnimFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\mqo\mqoFace.cpp">
-      <Filter>Source Files\MqoFile</Filter>
+    <ClCompile Include="..\source\diy\axes.cpp">
+      <Filter>Source Files\diy\Axes</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\mqo\mqoFile.cpp">
-      <Filter>Source Files\MqoFile</Filter>
+    <ClCompile Include="..\source\diy\axis.c">
+      <Filter>Source Files\diy\Axes</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\mqo\mqoLight.cpp">
-      <Filter>Source Files\MqoFile</Filter>
+    <ClCompile Include="..\source\diy\x_upper.c">
+      <Filter>Source Files\diy\Axes</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\mqo\mqoMaterial.cpp">
-      <Filter>Source Files\MqoFile</Filter>
+    <ClCompile Include="..\source\diy\y_upper.c">
+      <Filter>Source Files\diy\Axes</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\mqo\mqoObject.cpp">
-      <Filter>Source Files\MqoFile</Filter>
+    <ClCompile Include="..\source\diy\z_upper.c">
+      <Filter>Source Files\diy\Axes</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\mqo\mqoScene.cpp">
-      <Filter>Source Files\MqoFile</Filter>
+    <ClCompile Include="..\source\diy\camera.c">
+      <Filter>Source Files\diy\Camera</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\mqo\mqoString.cpp">
-      <Filter>Source Files\MqoFile</Filter>
+    <ClCompile Include="..\source\diy\camera.cpp">
+      <Filter>Source Files\diy\Camera</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\mqo\mqoTexCoord.cpp">
-      <Filter>Source Files\MqoFile</Filter>
+    <ClCompile Include="..\source\diy\target.c">
+      <Filter>Source Files\diy\Camera</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\mqo\mqoVector.cpp">
-      <Filter>Source Files\MqoFile</Filter>
+    <ClCompile Include="..\source\diy\colorMap.cpp">
+      <Filter>Source Files\diy\ColorMap</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\smd\smdBone.cpp">
-      <Filter>Source Files\SmdFile</Filter>
+    <ClCompile Include="..\source\diy\default.c">
+      <Filter>Source Files\diy\Font</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\smd\smdFace.cpp">
-      <Filter>Source Files\SmdFile</Filter>
+    <ClCompile Include="..\source\diy\font.cpp">
+      <Filter>Source Files\diy\Font</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\smd\smdFile.cpp">
-      <Filter>Source Files\SmdFile</Filter>
+    <ClCompile Include="..\source\diy\grid.cpp">
+      <Filter>Source Files\diy\Grid</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\smd\smdFrame.cpp">
-      <Filter>Source Files\SmdFile</Filter>
+    <ClCompile Include="..\source\diy\arrow.c">
+      <Filter>Source Files\diy\Manipulator</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\smd\smdSkinWeight.cpp">
-      <Filter>Source Files\SmdFile</Filter>
+    <ClCompile Include="..\source\diy\gimbal.c">
+      <Filter>Source Files\diy\Manipulator</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\smd\smdTexCoord.cpp">
-      <Filter>Source Files\SmdFile</Filter>
+    <ClCompile Include="..\source\diy\manipulator.cpp">
+      <Filter>Source Files\diy\Manipulator</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\smd\smdVector.cpp">
-      <Filter>Source Files\SmdFile</Filter>
+    <ClCompile Include="..\source\diy\pivot.c">
+      <Filter>Source Files\diy\Manipulator</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\smd\smdVertex.cpp">
-      <Filter>Source Files\SmdFile</Filter>
+    <ClCompile Include="..\source\diy\plane.c">
+      <Filter>Source Files\diy\Manipulator</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\selectable.cpp">
-      <Filter>Source Files\Selector</Filter>
+    <ClCompile Include="..\source\diy\scaler.c">
+      <Filter>Source Files\diy\Manipulator</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\selector.cpp">
-      <Filter>Source Files\Selector</Filter>
+    <ClCompile Include="..\source\diy\matrixStack.cpp">
+      <Filter>Source Files\diy\MatrixStack</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\intersection.cpp">
-      <Filter>Source Files\Selector</Filter>
+    <ClCompile Include="..\source\diy\mesh\ball_joint.c">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\selectableSphere.cpp">
-      <Filter>Source Files\Selector</Filter>
+    <ClCompile Include="..\source\diy\mesh\box.c">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\selectableMesh.cpp">
-      <Filter>Source Files\Selector</Filter>
+    <ClCompile Include="..\source\diy\mesh\capsule_lower.c">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\selectablePointCloud.cpp">
-      <Filter>Source Files\Selector</Filter>
+    <ClCompile Include="..\source\diy\mesh\capsule_middle.c">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\manipulator.cpp">
-      <Filter>Source Files\Manipulator</Filter>
+    <ClCompile Include="..\source\diy\mesh\capsule_upper.c">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\matrixStack.cpp">
-      <Filter>Source Files\MatrixStack</Filter>
+    <ClCompile Include="..\source\diy\mesh\cylinder.c">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\font.cpp">
-      <Filter>Source Files\Font</Filter>
+    <ClCompile Include="..\source\diy\mesh\hinge_joint.c">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\tag.cpp">
-      <Filter>Source Files\TagCloud</Filter>
+    <ClCompile Include="..\source\diy\mesh\joint.c">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\tagCloud.cpp">
-      <Filter>Source Files\TagCloud</Filter>
+    <ClCompile Include="..\source\diy\mesh\joint_ball_axis.c">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\colorMap.cpp">
-      <Filter>Source Files\ColorMap</Filter>
+    <ClCompile Include="..\source\diy\mesh\joint_hinge_axis.c">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\axis.c">
-      <Filter>Source Files\Axes</Filter>
+    <ClCompile Include="..\source\diy\mesh\joint_universal_axis.c">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\camera.c">
-      <Filter>Source Files\Camera</Filter>
+    <ClCompile Include="..\source\diy\mesh\link.c">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\arrow.c">
-      <Filter>Source Files\Manipulator</Filter>
+    <ClCompile Include="..\source\diy\mesh\sphere.c">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\gimbal.c">
-      <Filter>Source Files\Manipulator</Filter>
+    <ClCompile Include="..\source\diy\mesh\universal_joint.c">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\pivot.c">
-      <Filter>Source Files\Manipulator</Filter>
+    <ClCompile Include="..\source\diy\mesh\meshAnimatedVertex.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\plane.c">
-      <Filter>Source Files\Manipulator</Filter>
+    <ClCompile Include="..\source\diy\mesh\meshAnimatedVertices.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\scaler.c">
-      <Filter>Source Files\Manipulator</Filter>
+    <ClCompile Include="..\source\diy\mesh\meshExporter.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\target.c">
-      <Filter>Source Files\Camera</Filter>
+    <ClCompile Include="..\source\diy\mesh\meshFace.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\default.c">
-      <Filter>Source Files\Font</Filter>
+    <ClCompile Include="..\source\diy\mesh\meshFaces.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\x_upper.c">
-      <Filter>Source Files\Axes</Filter>
+    <ClCompile Include="..\source\diy\mesh\meshFile.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\y_upper.c">
-      <Filter>Source Files\Axes</Filter>
+    <ClCompile Include="..\source\diy\mesh\meshGroup.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\z_upper.c">
-      <Filter>Source Files\Axes</Filter>
+    <ClCompile Include="..\source\diy\mesh\meshGroups.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\vertexBufferObject.cpp">
-      <Filter>Source Files\Shader</Filter>
+    <ClCompile Include="..\source\diy\mesh\meshImporter.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\indexBufferObject.cpp">
-      <Filter>Source Files\Shader</Filter>
+    <ClCompile Include="..\source\diy\mesh\meshJoint.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\attributePointer.cpp">
-      <Filter>Source Files\Shader</Filter>
+    <ClCompile Include="..\source\diy\mesh\meshJoints.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\vertexArrayObject.cpp">
-      <Filter>Source Files\Shader</Filter>
+    <ClCompile Include="..\source\diy\mesh\meshMaterial.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\namedShaderArgument.cpp">
-      <Filter>Source Files\Shader</Filter>
+    <ClCompile Include="..\source\diy\mesh\meshMaterials.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\indexedShaderArgument.cpp">
-      <Filter>Source Files\Shader</Filter>
+    <ClCompile Include="..\source\diy\mesh\meshMorphtarget.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
     </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\meshMorphTargets.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\meshMorphTargetVertex.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\meshMorphTargetVertices.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\meshNode.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\meshNodes.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\meshObject.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\meshObjects.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\meshPhysics.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\meshRigidBodies.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\meshRigidBody.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\meshSkin.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\meshSkins.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\meshSkinWeight.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\meshSkinWeights.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\meshTexture.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\meshTextures.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\meshVertex.cpp">
+      <Filter>Source Files\diy\MeshFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mqo\mqoFace.cpp">
+      <Filter>Source Files\diy\MqoFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mqo\mqoFile.cpp">
+      <Filter>Source Files\diy\MqoFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mqo\mqoLight.cpp">
+      <Filter>Source Files\diy\MqoFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mqo\mqoMaterial.cpp">
+      <Filter>Source Files\diy\MqoFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mqo\mqoObject.cpp">
+      <Filter>Source Files\diy\MqoFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mqo\mqoScene.cpp">
+      <Filter>Source Files\diy\MqoFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mqo\mqoString.cpp">
+      <Filter>Source Files\diy\MqoFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mqo\mqoTexCoord.cpp">
+      <Filter>Source Files\diy\MqoFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mqo\mqoVector.cpp">
+      <Filter>Source Files\diy\MqoFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\obj\mtlColorRGB.cpp">
+      <Filter>Source Files\diy\ObjFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\obj\mtlFile.cpp">
+      <Filter>Source Files\diy\ObjFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\obj\mtlMaterial.cpp">
+      <Filter>Source Files\diy\ObjFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\obj\objFace.cpp">
+      <Filter>Source Files\diy\ObjFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\obj\objFile.cpp">
+      <Filter>Source Files\diy\ObjFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\obj\objIndexedVertex.cpp">
+      <Filter>Source Files\diy\ObjFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\obj\objTexCoord.cpp">
+      <Filter>Source Files\diy\ObjFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\obj\objVector.cpp">
+      <Filter>Source Files\diy\ObjFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\pmd\pmdBone.cpp">
+      <Filter>Source Files\diy\PmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\pmd\pmdFace.cpp">
+      <Filter>Source Files\diy\PmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\pmd\pmdFile.cpp">
+      <Filter>Source Files\diy\PmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\pmd\pmdIKChain.cpp">
+      <Filter>Source Files\diy\PmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\pmd\pmdMaterial.cpp">
+      <Filter>Source Files\diy\PmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\pmd\pmdMorphTarget.cpp">
+      <Filter>Source Files\diy\PmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\pmd\pmdMorphTargetVertex.cpp">
+      <Filter>Source Files\diy\PmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\pmd\pmdTexCoord.cpp">
+      <Filter>Source Files\diy\PmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\pmd\pmdVector.cpp">
+      <Filter>Source Files\diy\PmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\pmd\pmdVertex.cpp">
+      <Filter>Source Files\diy\PmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\pose\poseFile.cpp">
+      <Filter>Source Files\diy\PoseFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\pose\poseMorphTarget.cpp">
+      <Filter>Source Files\diy\PoseFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\pose\poseMorphTargets.cpp">
+      <Filter>Source Files\diy\PoseFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\pose\poseNode.cpp">
+      <Filter>Source Files\diy\PoseFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\pose\poseNodes.cpp">
+      <Filter>Source Files\diy\PoseFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\pose\poseObject.cpp">
+      <Filter>Source Files\diy\PoseFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\pose\poseObjects.cpp">
+      <Filter>Source Files\diy\PoseFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\pose\posePose.cpp">
+      <Filter>Source Files\diy\PoseFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\pose\posePoses.cpp">
+      <Filter>Source Files\diy\PoseFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\intersection.cpp">
+      <Filter>Source Files\diy\Selector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\selectable.cpp">
+      <Filter>Source Files\diy\Selector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\selectableMesh.cpp">
+      <Filter>Source Files\diy\Selector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\selectablePointCloud.cpp">
+      <Filter>Source Files\diy\Selector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\selectableSphere.cpp">
+      <Filter>Source Files\diy\Selector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\selector.cpp">
+      <Filter>Source Files\diy\Selector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\attributePointer.cpp">
+      <Filter>Source Files\diy\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\indexBufferObject.cpp">
+      <Filter>Source Files\diy\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\indexedShaderArgument.cpp">
+      <Filter>Source Files\diy\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\namedShaderArgument.cpp">
+      <Filter>Source Files\diy\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\shader.cpp">
+      <Filter>Source Files\diy\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\vertexArrayObject.cpp">
+      <Filter>Source Files\diy\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\vertexBufferObject.cpp">
+      <Filter>Source Files\diy\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\smd\smdBone.cpp">
+      <Filter>Source Files\diy\SmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\smd\smdFace.cpp">
+      <Filter>Source Files\diy\SmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\smd\smdFile.cpp">
+      <Filter>Source Files\diy\SmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\smd\smdFrame.cpp">
+      <Filter>Source Files\diy\SmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\smd\smdSkinWeight.cpp">
+      <Filter>Source Files\diy\SmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\smd\smdTexCoord.cpp">
+      <Filter>Source Files\diy\SmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\smd\smdVector.cpp">
+      <Filter>Source Files\diy\SmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\smd\smdVertex.cpp">
+      <Filter>Source Files\diy\SmdFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\tag.cpp">
+      <Filter>Source Files\diy\TagCloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\tagCloud.cpp">
+      <Filter>Source Files\diy\TagCloud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\tds\tdsChunk.cpp">
+      <Filter>Source Files\diy\TdsFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\tds\tdsChunks.cpp">
+      <Filter>Source Files\diy\TdsFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\tds\tdsColor.cpp">
+      <Filter>Source Files\diy\TdsFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\tds\tdsFace.cpp">
+      <Filter>Source Files\diy\TdsFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\tds\tdsFile.cpp">
+      <Filter>Source Files\diy\TdsFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\tds\tdsMap.cpp">
+      <Filter>Source Files\diy\TdsFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\tds\tdsMaterial.cpp">
+      <Filter>Source Files\diy\TdsFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\tds\tdsMatrix.cpp">
+      <Filter>Source Files\diy\TdsFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\tds\tdsMshMatGroup.cpp">
+      <Filter>Source Files\diy\TdsFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\tds\tdsNodeHeader.cpp">
+      <Filter>Source Files\diy\TdsFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\tds\tdsObject.cpp">
+      <Filter>Source Files\diy\TdsFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\tds\tdsObjectNode.cpp">
+      <Filter>Source Files\diy\TdsFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\tds\tdsPercentage.cpp">
+      <Filter>Source Files\diy\TdsFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\tds\tdsPoint.cpp">
+      <Filter>Source Files\diy\TdsFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\tds\tdsTexVert.cpp">
+      <Filter>Source Files\diy\TdsFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\half.cpp">
+      <Filter>Source Files\diy\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xAnimation.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xAnimationKey.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xAnimationOptions.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xAnimationSet.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xAnimTicksPerSecond.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xArray.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xColorRGB.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xColorRGBA.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xCoords2D.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xDWord.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xFile.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xFileUt.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xFloat.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xFloatKeys.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xFrame.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xFrameTransformMatrix.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xMaterial.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xMatrix4X4.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xMesh.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xMeshFace.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xMeshMaterialList.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xMeshNormals.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xMeshTextureCoords.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xName.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xNode.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xSkinMeshHeader.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xSkinWeights.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xString.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xTextureFileName.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xTimedFloatKeys.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\x\xVector.cpp">
+      <Filter>Source Files\diy\XFile</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\include\diy\mesh\meshClasses.hpp">
+      <Filter>Header Files\diy\MeshFile</Filter>
+    </None>
   </ItemGroup>
 </Project>

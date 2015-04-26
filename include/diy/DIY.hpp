@@ -1,4 +1,5 @@
 #ifndef DIY_HPP
+#define DIY_HPP
 
 #include <diy/shader.hpp>
 #include <diy/attributePointer.hpp>
@@ -22,5 +23,17 @@
 #include <diy/tag.hpp>
 #include <diy/tagCloud.hpp>
 #include <diy/colorMap.hpp>
+#include <diy/half.hpp>
+#include <diy/iKSolver.hpp>
+
+#include <diy/anim/anim.hpp>
+#include <diy/mesh/mesh.hpp>
+#include <diy/mqo/mqo.hpp>
+#include <diy/obj/obj.hpp>
+#include <diy/pmd/pmd.hpp>
+#include <diy/pose/pose.hpp>
+#include <diy/smd/smd.hpp>
+#include <diy/tds/tds.hpp>
+#include <diy/x/x.hpp>
 
 #endif

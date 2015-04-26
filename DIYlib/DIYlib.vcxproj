@@ -11,18 +11,116 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\diy\anim\anim.hpp" />
+    <ClInclude Include="..\include\diy\anim\animAnimation.hpp" />
+    <ClInclude Include="..\include\diy\anim\animAnimations.hpp" />
+    <ClInclude Include="..\include\diy\anim\animClasses.hpp" />
+    <ClInclude Include="..\include\diy\anim\animDefines.hpp" />
+    <ClInclude Include="..\include\diy\anim\animFile.hpp" />
+    <ClInclude Include="..\include\diy\anim\animKeyFrame.hpp" />
+    <ClInclude Include="..\include\diy\anim\animKeyFrames.hpp" />
+    <ClInclude Include="..\include\diy\anim\animMorphTarget.hpp" />
+    <ClInclude Include="..\include\diy\anim\animMorphTargets.hpp" />
+    <ClInclude Include="..\include\diy\anim\animNode.hpp" />
+    <ClInclude Include="..\include\diy\anim\animNodes.hpp" />
+    <ClInclude Include="..\include\diy\anim\animObject.hpp" />
+    <ClInclude Include="..\include\diy\anim\animObjects.hpp" />
     <ClInclude Include="..\include\diy\attributePointer.hpp" />
     <ClInclude Include="..\include\diy\axes.hpp" />
     <ClInclude Include="..\include\diy\camera.hpp" />
+    <ClInclude Include="..\include\diy\diyClasses.hpp" />
     <ClInclude Include="..\include\diy\colorMap.hpp" />
     <ClInclude Include="..\include\diy\diy.hpp" />
     <ClInclude Include="..\include\diy\font.hpp" />
     <ClInclude Include="..\include\diy\grid.hpp" />
+    <ClInclude Include="..\include\diy\half.hpp" />
+    <ClInclude Include="..\include\diy\iKSolver.hpp" />
     <ClInclude Include="..\include\diy\indexBufferObject.hpp" />
     <ClInclude Include="..\include\diy\indexedShaderArgument.hpp" />
     <ClInclude Include="..\include\diy\intersection.hpp" />
     <ClInclude Include="..\include\diy\manipulator.hpp" />
     <ClInclude Include="..\include\diy\matrixStack.hpp" />
+    <ClInclude Include="..\include\diy\mesh\mesh.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshAnimatedVertex.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshAnimatedVertices.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshDefines.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshExporter.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshFace.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshFaces.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshFile.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshGroup.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshGroups.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshImporter.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshJoint.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshJoints.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshMaterial.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshMaterials.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshMorphTarget.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshMorphTargets.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshMorphTargetVertex.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshMorphTargetVertices.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshNode.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshNodes.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshObject.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshObjects.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshPhysics.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshRigidBodies.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshRigidBody.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshSkin.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshSkins.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshSkinWeight.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshSkinWeights.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshTexture.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshTextures.hpp" />
+    <ClInclude Include="..\include\diy\mesh\meshVertex.hpp" />
+    <ClInclude Include="..\include\diy\mqo\mqo.hpp" />
+    <ClInclude Include="..\include\diy\mqo\mqoClasses.hpp" />
+    <ClInclude Include="..\include\diy\mqo\mqoDefines.hpp" />
+    <ClInclude Include="..\include\diy\mqo\mqoFace.hpp" />
+    <ClInclude Include="..\include\diy\mqo\mqoFile.hpp" />
+    <ClInclude Include="..\include\diy\mqo\mqoLight.hpp" />
+    <ClInclude Include="..\include\diy\mqo\mqoMaterial.hpp" />
+    <ClInclude Include="..\include\diy\mqo\mqoObject.hpp" />
+    <ClInclude Include="..\include\diy\mqo\mqoScene.hpp" />
+    <ClInclude Include="..\include\diy\mqo\mqoString.hpp" />
+    <ClInclude Include="..\include\diy\mqo\mqoTexCoord.hpp" />
+    <ClInclude Include="..\include\diy\mqo\mqoVector.hpp" />
+    <ClInclude Include="..\include\diy\Obj\mtlColorRGB.hpp" />
+    <ClInclude Include="..\include\diy\Obj\mtlFile.hpp" />
+    <ClInclude Include="..\include\diy\Obj\mtlMaterial.hpp" />
+    <ClInclude Include="..\include\diy\obj\obj.hpp" />
+    <ClInclude Include="..\include\diy\obj\objClasses.hpp" />
+    <ClInclude Include="..\include\diy\obj\objDefines.hpp" />
+    <ClInclude Include="..\include\diy\Obj\objFace.hpp" />
+    <ClInclude Include="..\include\diy\Obj\objFile.hpp" />
+    <ClInclude Include="..\include\diy\Obj\objIndexedVertex.hpp" />
+    <ClInclude Include="..\include\diy\Obj\objTexCoord.hpp" />
+    <ClInclude Include="..\include\diy\Obj\objVector.hpp" />
+    <ClInclude Include="..\include\diy\pmd\pmd.hpp" />
+    <ClInclude Include="..\include\diy\pmd\pmdBone.hpp" />
+    <ClInclude Include="..\include\diy\pmd\pmdClasses.hpp" />
+    <ClInclude Include="..\include\diy\pmd\pmdDefines.hpp" />
+    <ClInclude Include="..\include\diy\pmd\pmdFace.hpp" />
+    <ClInclude Include="..\include\diy\pmd\pmdFile.hpp" />
+    <ClInclude Include="..\include\diy\pmd\pmdIKChain.hpp" />
+    <ClInclude Include="..\include\diy\pmd\pmdMaterial.hpp" />
+    <ClInclude Include="..\include\diy\pmd\pmdMorphTarget.hpp" />
+    <ClInclude Include="..\include\diy\pmd\pmdMorphTargetVertex.hpp" />
+    <ClInclude Include="..\include\diy\pmd\pmdTexCoord.hpp" />
+    <ClInclude Include="..\include\diy\pmd\pmdVector.hpp" />
+    <ClInclude Include="..\include\diy\pmd\pmdVertex.hpp" />
+    <ClInclude Include="..\include\diy\pose\pose.hpp" />
+    <ClInclude Include="..\include\diy\pose\poseClasses.hpp" />
+    <ClInclude Include="..\include\diy\pose\poseDefines.hpp" />
+    <ClInclude Include="..\include\diy\pose\poseFile.hpp" />
+    <ClInclude Include="..\include\diy\pose\poseMorphTarget.hpp" />
+    <ClInclude Include="..\include\diy\pose\poseMorphTargets.hpp" />
+    <ClInclude Include="..\include\diy\pose\poseNode.hpp" />
+    <ClInclude Include="..\include\diy\pose\poseNodes.hpp" />
+    <ClInclude Include="..\include\diy\pose\poseObject.hpp" />
+    <ClInclude Include="..\include\diy\pose\poseObjects.hpp" />
+    <ClInclude Include="..\include\diy\pose\posePose.hpp" />
+    <ClInclude Include="..\include\diy\pose\posePoses.hpp" />
     <ClInclude Include="..\include\diy\selectable.hpp" />
     <ClInclude Include="..\include\diy\selectableMesh.hpp" />
     <ClInclude Include="..\include\diy\selectablePointCloud.hpp" />
@@ -30,119 +128,325 @@
     <ClInclude Include="..\include\diy\selector.hpp" />
     <ClInclude Include="..\include\diy\shader.hpp" />
     <ClInclude Include="..\include\diy\namedShaderArgument.hpp" />
+    <ClInclude Include="..\include\diy\smd\smd.hpp" />
+    <ClInclude Include="..\include\diy\smd\smdBone.hpp" />
+    <ClInclude Include="..\include\diy\smd\smdClasses.hpp" />
+    <ClInclude Include="..\include\diy\smd\smdDefines.hpp" />
+    <ClInclude Include="..\include\diy\smd\smdFace.hpp" />
+    <ClInclude Include="..\include\diy\smd\smdFile.hpp" />
+    <ClInclude Include="..\include\diy\smd\smdFrame.hpp" />
+    <ClInclude Include="..\include\diy\smd\smdSkinWeight.hpp" />
+    <ClInclude Include="..\include\diy\smd\smdTexCoord.hpp" />
+    <ClInclude Include="..\include\diy\smd\smdVector.hpp" />
+    <ClInclude Include="..\include\diy\smd\smdVertex.hpp" />
     <ClInclude Include="..\include\diy\tag.hpp" />
     <ClInclude Include="..\include\diy\tagCloud.hpp" />
+    <ClInclude Include="..\include\diy\tds\tdsChunk.hpp" />
+    <ClInclude Include="..\include\diy\tds\tdsChunks.hpp" />
+    <ClInclude Include="..\include\diy\tds\tdsClasses.hpp" />
+    <ClInclude Include="..\include\diy\tds\tdsColor.hpp" />
+    <ClInclude Include="..\include\diy\tds\tds.hpp" />
+    <ClInclude Include="..\include\diy\tds\tdsDefines.hpp" />
+    <ClInclude Include="..\include\diy\tds\tdsFace.hpp" />
+    <ClInclude Include="..\include\diy\tds\tdsFile.hpp" />
+    <ClInclude Include="..\include\diy\tds\tdsMap.hpp" />
+    <ClInclude Include="..\include\diy\tds\tdsMaterial.hpp" />
+    <ClInclude Include="..\include\diy\tds\tdsMatrix.hpp" />
+    <ClInclude Include="..\include\diy\tds\tdsMshMatGroup.hpp" />
+    <ClInclude Include="..\include\diy\tds\tdsNodeHeader.hpp" />
+    <ClInclude Include="..\include\diy\tds\tdsObject.hpp" />
+    <ClInclude Include="..\include\diy\tds\tdsObjectNode.hpp" />
+    <ClInclude Include="..\include\diy\tds\tdsPercentage.hpp" />
+    <ClInclude Include="..\include\diy\tds\tdsPoint.hpp" />
+    <ClInclude Include="..\include\diy\tds\tdsTexVert.hpp" />
     <ClInclude Include="..\include\diy\vertexArrayObject.hpp" />
     <ClInclude Include="..\include\diy\vertexBufferObject.hpp" />
+    <ClInclude Include="..\include\diy\x\x.hpp" />
+    <ClInclude Include="..\include\diy\x\xAnimation.hpp" />
+    <ClInclude Include="..\include\diy\x\xAnimationKey.hpp" />
+    <ClInclude Include="..\include\diy\x\xAnimationOptions.hpp" />
+    <ClInclude Include="..\include\diy\x\xAnimationSet.hpp" />
+    <ClInclude Include="..\include\diy\x\xAnimTicksPerSecond.hpp" />
+    <ClInclude Include="..\include\diy\x\xArray.hpp" />
+    <ClInclude Include="..\include\diy\x\xClasses.hpp" />
+    <ClInclude Include="..\include\diy\x\xColorRGB.hpp" />
+    <ClInclude Include="..\include\diy\x\xColorRGBA.hpp" />
+    <ClInclude Include="..\include\diy\x\xCoords2D.hpp" />
+    <ClInclude Include="..\include\diy\x\xDefines.hpp" />
+    <ClInclude Include="..\include\diy\x\xDWord.hpp" />
+    <ClInclude Include="..\include\diy\x\xFile.hpp" />
+    <ClInclude Include="..\include\diy\x\xFileUt.hpp" />
+    <ClInclude Include="..\include\diy\x\xFloat.hpp" />
+    <ClInclude Include="..\include\diy\x\xFloatKeys.hpp" />
+    <ClInclude Include="..\include\diy\x\xFrame.hpp" />
+    <ClInclude Include="..\include\diy\x\xFrameTransformMatrix.hpp" />
+    <ClInclude Include="..\include\diy\x\xMaterial.hpp" />
+    <ClInclude Include="..\include\diy\x\xMatrix4X4.hpp" />
+    <ClInclude Include="..\include\diy\x\xMesh.hpp" />
+    <ClInclude Include="..\include\diy\x\xMeshFace.hpp" />
+    <ClInclude Include="..\include\diy\x\xMeshMaterialList.hpp" />
+    <ClInclude Include="..\include\diy\x\xMeshNormals.hpp" />
+    <ClInclude Include="..\include\diy\x\xMeshTextureCoords.hpp" />
+    <ClInclude Include="..\include\diy\x\xName.hpp" />
+    <ClInclude Include="..\include\diy\x\xNode.hpp" />
+    <ClInclude Include="..\include\diy\x\xSkinMeshHeader.hpp" />
+    <ClInclude Include="..\include\diy\x\xSkinWeights.hpp" />
+    <ClInclude Include="..\include\diy\x\xString.hpp" />
+    <ClInclude Include="..\include\diy\x\xTextureFileName.hpp" />
+    <ClInclude Include="..\include\diy\x\xTimedFloatKeys.hpp" />
+    <ClInclude Include="..\include\diy\x\xUt.hpp" />
+    <ClInclude Include="..\include\diy\x\xVector.hpp" />
     <ClInclude Include="..\include\glm\own.hpp" />
-    <ClInclude Include="..\source\mqo\mqoFace.hpp" />
-    <ClInclude Include="..\source\mqo\mqoFile.hpp" />
-    <ClInclude Include="..\source\mqo\mqoLight.hpp" />
-    <ClInclude Include="..\source\mqo\mqoMaterial.hpp" />
-    <ClInclude Include="..\source\mqo\mqoObject.hpp" />
-    <ClInclude Include="..\source\mqo\mqoScene.hpp" />
-    <ClInclude Include="..\source\mqo\mqoString.hpp" />
-    <ClInclude Include="..\source\mqo\mqoTexCoord.hpp" />
-    <ClInclude Include="..\source\mqo\mqoVector.hpp" />
-    <ClInclude Include="..\source\obj\mtlColorRGB.hpp" />
-    <ClInclude Include="..\source\obj\mtlFile.hpp" />
-    <ClInclude Include="..\source\obj\mtlMaterial.hpp" />
-    <ClInclude Include="..\source\obj\objFace.hpp" />
-    <ClInclude Include="..\source\obj\objFile.hpp" />
-    <ClInclude Include="..\source\obj\objIndexedVertex.hpp" />
-    <ClInclude Include="..\source\obj\objTexCoord.hpp" />
-    <ClInclude Include="..\source\obj\objVector.hpp" />
-    <ClInclude Include="..\source\smd\smdBone.hpp" />
-    <ClInclude Include="..\source\smd\smdFace.hpp" />
-    <ClInclude Include="..\source\smd\smdFile.hpp" />
-    <ClInclude Include="..\source\smd\smdFrame.hpp" />
-    <ClInclude Include="..\source\smd\smdSkinWeight.hpp" />
-    <ClInclude Include="..\source\smd\smdTexCoord.hpp" />
-    <ClInclude Include="..\source\smd\smdVector.hpp" />
-    <ClInclude Include="..\source\smd\smdVertex.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\source\arrow.c">
+    <ClCompile Include="..\source\diy\arrow.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\source\attributePointer.cpp" />
-    <ClCompile Include="..\source\axes.cpp" />
-    <ClCompile Include="..\source\axis.c">
+    <ClCompile Include="..\source\diy\attributePointer.cpp" />
+    <ClCompile Include="..\source\diy\axes.cpp" />
+    <ClCompile Include="..\source\diy\axis.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\source\camera.c">
+    <ClCompile Include="..\source\diy\camera.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\source\camera.cpp" />
-    <ClCompile Include="..\source\colorMap.cpp" />
-    <ClCompile Include="..\source\default.c" />
-    <ClCompile Include="..\source\font.cpp" />
-    <ClCompile Include="..\source\gimbal.c">
+    <ClCompile Include="..\source\diy\camera.cpp" />
+    <ClCompile Include="..\source\diy\colorMap.cpp" />
+    <ClCompile Include="..\source\diy\default.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\anim\animAnimation.cpp" />
+    <ClCompile Include="..\source\diy\anim\animAnimations.cpp" />
+    <ClCompile Include="..\source\diy\anim\animFile.cpp" />
+    <ClCompile Include="..\source\diy\anim\animKeyFrame.cpp" />
+    <ClCompile Include="..\source\diy\anim\animKeyFrames.cpp" />
+    <ClCompile Include="..\source\diy\anim\animMorphTarget.cpp" />
+    <ClCompile Include="..\source\diy\anim\animMorphTargets.cpp" />
+    <ClCompile Include="..\source\diy\anim\animNode.cpp" />
+    <ClCompile Include="..\source\diy\anim\animNodes.cpp" />
+    <ClCompile Include="..\source\diy\anim\animObject.cpp" />
+    <ClCompile Include="..\source\diy\anim\animObjects.cpp" />
+    <ClCompile Include="..\source\diy\font.cpp" />
+    <ClCompile Include="..\source\diy\gimbal.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\source\grid.cpp" />
-    <ClCompile Include="..\source\indexBufferObject.cpp" />
-    <ClCompile Include="..\source\indexedShaderArgument.cpp" />
-    <ClCompile Include="..\source\intersection.cpp" />
-    <ClCompile Include="..\source\manipulator.cpp" />
-    <ClCompile Include="..\source\matrixStack.cpp" />
-    <ClCompile Include="..\source\mqo\mqoFace.cpp" />
-    <ClCompile Include="..\source\mqo\mqoFile.cpp" />
-    <ClCompile Include="..\source\mqo\mqoLight.cpp" />
-    <ClCompile Include="..\source\mqo\mqoMaterial.cpp" />
-    <ClCompile Include="..\source\mqo\mqoObject.cpp" />
-    <ClCompile Include="..\source\mqo\mqoScene.cpp" />
-    <ClCompile Include="..\source\mqo\mqoString.cpp" />
-    <ClCompile Include="..\source\mqo\mqoTexCoord.cpp" />
-    <ClCompile Include="..\source\mqo\mqoVector.cpp" />
-    <ClCompile Include="..\source\obj\mtlColorRGB.cpp" />
-    <ClCompile Include="..\source\obj\mtlFile.cpp" />
-    <ClCompile Include="..\source\obj\mtlMaterial.cpp" />
-    <ClCompile Include="..\source\obj\objFace.cpp" />
-    <ClCompile Include="..\source\obj\objFile.cpp" />
-    <ClCompile Include="..\source\obj\objIndexedVertex.cpp" />
-    <ClCompile Include="..\source\obj\objTexCoord.cpp" />
-    <ClCompile Include="..\source\obj\objVector.cpp" />
-    <ClCompile Include="..\source\pivot.c">
+    <ClCompile Include="..\source\diy\mesh\meshAnimatedVertex.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshAnimatedVertices.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshExporter.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshFace.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshFaces.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshFile.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshGroup.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshGroups.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshImporter.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshJoint.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshJoints.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshMaterial.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshMaterials.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshMorphtarget.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshMorphTargets.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshMorphTargetVertex.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshMorphTargetVertices.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshNode.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshNodes.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshObject.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshObjects.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshPhysics.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshRigidBodies.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshRigidBody.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshSkin.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshSkins.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshSkinWeight.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshSkinWeights.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshTexture.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshTextures.cpp" />
+    <ClCompile Include="..\source\diy\mesh\meshVertex.cpp" />
+    <ClCompile Include="..\source\diy\mqo\mqoFace.cpp" />
+    <ClCompile Include="..\source\diy\mqo\mqoFile.cpp" />
+    <ClCompile Include="..\source\diy\mqo\mqoLight.cpp" />
+    <ClCompile Include="..\source\diy\mqo\mqoMaterial.cpp" />
+    <ClCompile Include="..\source\diy\mqo\mqoObject.cpp" />
+    <ClCompile Include="..\source\diy\mqo\mqoScene.cpp" />
+    <ClCompile Include="..\source\diy\mqo\mqoString.cpp" />
+    <ClCompile Include="..\source\diy\mqo\mqoTexCoord.cpp" />
+    <ClCompile Include="..\source\diy\mqo\mqoVector.cpp" />
+    <ClCompile Include="..\source\diy\obj\mtlColorRGB.cpp" />
+    <ClCompile Include="..\source\diy\obj\mtlFile.cpp" />
+    <ClCompile Include="..\source\diy\obj\mtlMaterial.cpp" />
+    <ClCompile Include="..\source\diy\obj\objFace.cpp" />
+    <ClCompile Include="..\source\diy\obj\objFile.cpp" />
+    <ClCompile Include="..\source\diy\obj\objIndexedVertex.cpp" />
+    <ClCompile Include="..\source\diy\obj\objTexCoord.cpp" />
+    <ClCompile Include="..\source\diy\obj\objVector.cpp" />
+    <ClCompile Include="..\source\diy\pmd\pmdBone.cpp" />
+    <ClCompile Include="..\source\diy\pmd\pmdFace.cpp" />
+    <ClCompile Include="..\source\diy\pmd\pmdFile.cpp" />
+    <ClCompile Include="..\source\diy\pmd\pmdIKChain.cpp" />
+    <ClCompile Include="..\source\diy\pmd\pmdMaterial.cpp" />
+    <ClCompile Include="..\source\diy\pmd\pmdMorphTarget.cpp" />
+    <ClCompile Include="..\source\diy\pmd\pmdMorphTargetVertex.cpp" />
+    <ClCompile Include="..\source\diy\pmd\pmdTexCoord.cpp" />
+    <ClCompile Include="..\source\diy\pmd\pmdVector.cpp" />
+    <ClCompile Include="..\source\diy\pmd\pmdVertex.cpp" />
+    <ClCompile Include="..\source\diy\pose\poseFile.cpp" />
+    <ClCompile Include="..\source\diy\pose\poseMorphTarget.cpp" />
+    <ClCompile Include="..\source\diy\pose\poseMorphTargets.cpp" />
+    <ClCompile Include="..\source\diy\pose\poseNode.cpp" />
+    <ClCompile Include="..\source\diy\pose\poseNodes.cpp" />
+    <ClCompile Include="..\source\diy\pose\poseObject.cpp" />
+    <ClCompile Include="..\source\diy\pose\poseObjects.cpp" />
+    <ClCompile Include="..\source\diy\pose\posePose.cpp" />
+    <ClCompile Include="..\source\diy\pose\posePoses.cpp" />
+    <ClCompile Include="..\source\diy\smd\smdBone.cpp" />
+    <ClCompile Include="..\source\diy\smd\smdFace.cpp" />
+    <ClCompile Include="..\source\diy\smd\smdFile.cpp" />
+    <ClCompile Include="..\source\diy\smd\smdFrame.cpp" />
+    <ClCompile Include="..\source\diy\smd\smdSkinWeight.cpp" />
+    <ClCompile Include="..\source\diy\smd\smdTexCoord.cpp" />
+    <ClCompile Include="..\source\diy\smd\smdVector.cpp" />
+    <ClCompile Include="..\source\diy\smd\smdVertex.cpp" />
+    <ClCompile Include="..\source\diy\tds\tdsChunk.cpp" />
+    <ClCompile Include="..\source\diy\tds\tdsChunks.cpp" />
+    <ClCompile Include="..\source\diy\tds\tdsColor.cpp" />
+    <ClCompile Include="..\source\diy\tds\tdsFace.cpp" />
+    <ClCompile Include="..\source\diy\tds\tdsFile.cpp" />
+    <ClCompile Include="..\source\diy\tds\tdsMap.cpp" />
+    <ClCompile Include="..\source\diy\tds\tdsMaterial.cpp" />
+    <ClCompile Include="..\source\diy\tds\tdsMatrix.cpp" />
+    <ClCompile Include="..\source\diy\tds\tdsMshMatGroup.cpp" />
+    <ClCompile Include="..\source\diy\tds\tdsNodeHeader.cpp" />
+    <ClCompile Include="..\source\diy\tds\tdsObject.cpp" />
+    <ClCompile Include="..\source\diy\tds\tdsObjectNode.cpp" />
+    <ClCompile Include="..\source\diy\tds\tdsPercentage.cpp" />
+    <ClCompile Include="..\source\diy\tds\tdsPoint.cpp" />
+    <ClCompile Include="..\source\diy\tds\tdsTexVert.cpp" />
+    <ClCompile Include="..\source\diy\x\xAnimation.cpp" />
+    <ClCompile Include="..\source\diy\x\xAnimationKey.cpp" />
+    <ClCompile Include="..\source\diy\x\xAnimationOptions.cpp" />
+    <ClCompile Include="..\source\diy\x\xAnimationSet.cpp" />
+    <ClCompile Include="..\source\diy\x\xAnimTicksPerSecond.cpp" />
+    <ClCompile Include="..\source\diy\x\xArray.cpp" />
+    <ClCompile Include="..\source\diy\x\xColorRGB.cpp" />
+    <ClCompile Include="..\source\diy\x\xColorRGBA.cpp" />
+    <ClCompile Include="..\source\diy\x\xCoords2D.cpp" />
+    <ClCompile Include="..\source\diy\x\xDWord.cpp" />
+    <ClCompile Include="..\source\diy\x\xFile.cpp" />
+    <ClCompile Include="..\source\diy\x\xFileUt.cpp" />
+    <ClCompile Include="..\source\diy\x\xFloat.cpp" />
+    <ClCompile Include="..\source\diy\x\xFloatKeys.cpp" />
+    <ClCompile Include="..\source\diy\x\xFrame.cpp" />
+    <ClCompile Include="..\source\diy\x\xFrameTransformMatrix.cpp" />
+    <ClCompile Include="..\source\diy\x\xMaterial.cpp" />
+    <ClCompile Include="..\source\diy\x\xMatrix4X4.cpp" />
+    <ClCompile Include="..\source\diy\x\xMesh.cpp" />
+    <ClCompile Include="..\source\diy\x\xMeshFace.cpp" />
+    <ClCompile Include="..\source\diy\x\xMeshMaterialList.cpp" />
+    <ClCompile Include="..\source\diy\x\xMeshNormals.cpp" />
+    <ClCompile Include="..\source\diy\x\xMeshTextureCoords.cpp" />
+    <ClCompile Include="..\source\diy\x\xName.cpp" />
+    <ClCompile Include="..\source\diy\x\xNode.cpp" />
+    <ClCompile Include="..\source\diy\x\xSkinMeshHeader.cpp" />
+    <ClCompile Include="..\source\diy\x\xSkinWeights.cpp" />
+    <ClCompile Include="..\source\diy\x\xString.cpp" />
+    <ClCompile Include="..\source\diy\x\xTextureFileName.cpp" />
+    <ClCompile Include="..\source\diy\x\xTimedFloatKeys.cpp" />
+    <ClCompile Include="..\source\diy\x\xVector.cpp" />
+    <ClCompile Include="..\source\glm\own.cpp" />
+    <ClCompile Include="..\source\diy\grid.cpp" />
+    <ClCompile Include="..\source\diy\half.cpp" />
+    <ClCompile Include="..\source\diy\indexBufferObject.cpp" />
+    <ClCompile Include="..\source\diy\indexedShaderArgument.cpp" />
+    <ClCompile Include="..\source\diy\intersection.cpp" />
+    <ClCompile Include="..\source\diy\manipulator.cpp" />
+    <ClCompile Include="..\source\diy\matrixStack.cpp" />
+    <ClCompile Include="..\source\diy\mesh\ball_joint.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\box.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\capsule_lower.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\capsule_middle.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\capsule_upper.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\cylinder.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\hinge_joint.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\joint.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\joint_ball_axis.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\joint_hinge_axis.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\joint_universal_axis.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\link.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\sphere.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\mesh\universal_joint.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\source\diy\pivot.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\source\plane.c">
+    <ClCompile Include="..\source\diy\plane.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\source\scaler.c">
+    <ClCompile Include="..\source\diy\scaler.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\source\selectable.cpp" />
-    <ClCompile Include="..\source\selectableMesh.cpp" />
-    <ClCompile Include="..\source\selectablePointCloud.cpp" />
-    <ClCompile Include="..\source\selectableSphere.cpp" />
-    <ClCompile Include="..\source\selector.cpp" />
-    <ClCompile Include="..\source\shader.cpp" />
-    <ClCompile Include="..\source\namedShaderArgument.cpp" />
-    <ClCompile Include="..\source\smd\smdBone.cpp" />
-    <ClCompile Include="..\source\smd\smdFace.cpp" />
-    <ClCompile Include="..\source\smd\smdFile.cpp" />
-    <ClCompile Include="..\source\smd\smdFrame.cpp" />
-    <ClCompile Include="..\source\smd\smdSkinWeight.cpp" />
-    <ClCompile Include="..\source\smd\smdTexCoord.cpp" />
-    <ClCompile Include="..\source\smd\smdVector.cpp" />
-    <ClCompile Include="..\source\smd\smdVertex.cpp" />
-    <ClCompile Include="..\source\tag.cpp" />
-    <ClCompile Include="..\source\tagCloud.cpp" />
-    <ClCompile Include="..\source\target.c">
+    <ClCompile Include="..\source\diy\selectable.cpp" />
+    <ClCompile Include="..\source\diy\selectableMesh.cpp" />
+    <ClCompile Include="..\source\diy\selectablePointCloud.cpp" />
+    <ClCompile Include="..\source\diy\selectableSphere.cpp" />
+    <ClCompile Include="..\source\diy\selector.cpp" />
+    <ClCompile Include="..\source\diy\shader.cpp" />
+    <ClCompile Include="..\source\diy\namedShaderArgument.cpp" />
+    <ClCompile Include="..\source\diy\tag.cpp" />
+    <ClCompile Include="..\source\diy\tagCloud.cpp" />
+    <ClCompile Include="..\source\diy\target.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\source\vertexArrayObject.cpp" />
-    <ClCompile Include="..\source\vertexBufferObject.cpp" />
-    <ClCompile Include="..\source\x_upper.c">
+    <ClCompile Include="..\source\diy\vertexArrayObject.cpp" />
+    <ClCompile Include="..\source\diy\vertexBufferObject.cpp" />
+    <ClCompile Include="..\source\diy\x_upper.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\source\y_upper.c">
+    <ClCompile Include="..\source\diy\y_upper.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\source\z_upper.c">
+    <ClCompile Include="..\source\diy\z_upper.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\include\diy\mesh\meshClasses.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{072104E1-068C-46A1-8F0D-A1D21AD3E93C}</ProjectGuid>
@@ -187,6 +491,8 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;DIYLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <GenerateXMLDocumentationFiles>true</GenerateXMLDocumentationFiles>
+      <XMLDocumentationFileName>$(IntDir)\</XMLDocumentationFileName>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -202,16 +508,17 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;GLM_FORCE_PURE;GLM_FORCE_RADIANS;WIN32;NDEBUG;_WINDOWS;_USRDLL;DIYLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\dev\tinyxml2-master;C:\dev\FreeImage3170Win32Win64\FreeImage\Dist\x32;C:\dev\glew-1.12.0\include;C:\dev\glm-0.9.6.3\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;GLM_FORCE_PURE;GLM_FORCE_RADIANS;WIN32;NDEBUG;_WINDOWS;_USRDLL;DIYLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\dev\zlib128-dll\include;C:\dev\tinyxml2-master;C:\dev\FreeImage3170Win32Win64\FreeImage\Dist\x32;C:\dev\glew-1.12.0\include;C:\dev\glm-0.9.6.3\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>C:\dev\tinyxml2-master\tinyxml2\bin\Win32-Release-Dll;C:\dev\FreeImage3170Win32Win64\FreeImage\Dist\x32;C:\dev\glew-1.12.0\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>tinyxml2.lib;FreeImage.lib;glew32.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\dev\zlib128-dll\lib;C:\dev\tinyxml2-master\tinyxml2\bin\Win32-Release-Dll;C:\dev\FreeImage3170Win32Win64\FreeImage\Dist\x32;C:\dev\glew-1.12.0\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zdll.lib;tinyxml2.lib;FreeImage.lib;glew32.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

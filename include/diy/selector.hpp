@@ -30,9 +30,9 @@ namespace diy
 
 		DIYLIB_API void Click(void);
 		DIYLIB_API void DoubleClick(void);
-		DIYLIB_API void MouseDown(glm::vec2 mousePos);
-		DIYLIB_API void MouseMove(glm::vec2 mousePos);
-		DIYLIB_API void MouseUp(glm::vec2 mousePos);
+		DIYLIB_API void MouseDown(glm::vec2 mousePosition);
+		DIYLIB_API void MouseMove(glm::vec2 mousePosition);
+		DIYLIB_API void MouseUp(glm::vec2 mousePosition);
 
 		template<class T>T* New(void)
 		{
@@ -46,6 +46,7 @@ namespace diy
 		DIYLIB_API void Delete(Selectable* selectable);
 		DIYLIB_API void Clear(void);
 
+		DIYLIB_API void SetSelected(Selectable* selectable);
 		DIYLIB_API Selectable* GetSelected(void);
 
 	private:
@@ -59,6 +60,8 @@ namespace diy
 
 		bool mMouseDown;
 		bool mDrag;
+
+		glm::vec2 mOldMousePosition;
 	};
 
 }
